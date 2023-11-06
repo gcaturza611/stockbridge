@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News and Media</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/stockbridge_no_bg.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+    <!--navbar starts here-->
+    <header>
+        <a href="index.html" class="logo">
+          <img src="assets/images/stockbridge_no_bg.png" alt="">
+        </a>
+        <div class="navigation">
+            <ul class="menu">
+                <div class="close-btn"></div>
+                <li class="menu-item"><a href="index.html">home</a></li>
+                <li class="menu-item">
+                    <a  class="sub-btn" href="#">about us <i class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                  <li class="sub-item"><a href="our-story.html">our story</a></li>
+                  <li class="sub-item"><a href="mvc-values.html">Our Mission, Vision And Core Values</a></li>
+                  <li class="sub-item"><a href="our-saga.html">Our SAGA</a></li>
+                  <li class="sub-item"><a href="int-partners.html">Our International Partners</a></li>
+                  <li class="sub-item"><a href="stockbridge-adv.html">The Stockbridge Advantage</a></li>
+                  <li class="sub-item"><a href="our-facilities.html">Our Facilities</a></li>
+                  <li class="sub-item"><a href="admission.html">Admission</a></li>
+                </ul>
+                </li>
+                <li class="menu-item">
+                    <a class="sub-btn" href="#">our programs <i class="fas fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li class="sub-item"><a href="early-childhood.html">Early Childhood</a></li>
+                    <li class="sub-item"><a href="elementary.html">Elementary</a></li>
+                    <li class="sub-item"><a href="junior-high.html">Junior High School</a></li>
+                    <li class="sub-item"><a href="vc-learning.html">Virtual Classroom Learning</a></li>
+                    <li class="sub-item"><a href="curriculum.html">Our Curriculum</a></li>
+                    <li class="sub-item"><a href="school-calendar.html">Our School Calendar</a></li>
+                  </ul>
+                  </li>
+                <li class="menu-item">
+                    <a class="sub-btn" href="#">our highlights <i class="fas fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li class="sub-item"><a href="global-business-leadership.html">global business leadership</a></li>
+                    <li class="sub-item"><a href="entrep-inno.html">Entrepreneurship And Innovations</a></li>
+                    <li class="sub-item"><a href="leader-personal-dev.html">Leadership And Personality Development</a></li>
+                    <li class="sub-item"><a href="international-education-week.html">International Education Week</a></li>
+                    <li class="sub-item"><a href="lions-week.html">LIONS Week</a></li>
+                    <li class="sub-item"><a href="clubs-organizations.html">Clubs and Organizations</a></li>
+                    <li class="sub-item"><a href="community-service.html">Community Service</a></li>
+                    <li class="sub-item"><a href="leadership-engagement-trips.html">Leadership And Engagement Trips</a></li>
+                  </ul>
+                  </li> 
+                <li class="menu-item"><a href="news-media.html">news and media</a></li>
+                <li class="menu-item"><a href="blog.html">blog</a></li>
+                <li class="menu-item"><a href="contact.html">contact us</a></li>
+            </ul>
+        </div>
+        <div class="menu-btn">
+            
+        </div>
+    </header>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".sub-btn").click(function(){
+                $(this).next(".sub-menu").slideToggle();
+            });
+        });
+    
+        var menu = document.querySelector(".menu");
+        var menuBtn = document.querySelector(".menu-btn");
+        var closeBtn = document.querySelector(".close-btn");
+    
+        menuBtn.addEventListener("click", () => {
+            menu.classList.add("active");
+        });
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove("active");
+        });
+    
+        //javascript for the navigation bar effects on scroll
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+      </script>
+    <!--navbar ends here-->
+
+    <!--our story content starts here-->
+    <section class="news-media">
+        <div class="heading">
+            <h3>News and Media</h3>
+        </div>
+        <div class="container">
+            <div class="news-media-modal">
+                <div class="modal-content">
+                    <div class="box">
+                        <button class="btn" data-target="#modal1">
+                            <img src="assets/images/gallery-1.png" alt="">
+                            <h3>Valuing Literacy Virtually</h3>
+                        </button>
+                    </div>
+                    <div class="modal" id="modal1">
+                        <div class="header">
+                            <div class="title">Valuing Literacy Virtually</div>
+                            <button class="btn close-modal">&times;</button>
+                        </div>
+                        <div class="body">
+                            <p>
+                                Last September 19-23, 2020, the school celebrated Literacy Week. Stockbridge community did varied activities that showcased the creativity, 
+                                talents, and skills in writing and speaking of the Stockbridge kids. Each grade level was given a task to finish within the day. The students 
+                                showed enthusiasm and excitement throughout the celebration. Each of them took PRIDE in completing their outputs. The event culminated by 
+                                awarding the students who excelled among the rest. Here are the students who bagged first place in each contest. Zach Andre Chua for Scan and 
+                                Predict Competition Grade 1 Category and Youssef Al Shuaibi for Grade 2 Category. Huey Marco Gascon for Creative Cover Design Contest for 
+                                Grade 3 Category. Wayne Fontanilla and Angeli Ysabelle Pagente for Electronic Story Writing Contest Grade 4 Category and Henrich 
+                                Miguel Gascon and Pierce Stephen Lagamayo for Grade 5 Category. Kim Lian Cabote for Extemporaneous Speech Contest for Grade 6 Category. 
+                                The event successfully promoted an understanding and awareness of the importance of reading, speaking, and writing as an integral form of 
+                                communication. The online platform or learning modality may be new to all of us especially to our students but learning behind the screen 
+                                does not stop them to value knowledge and literacy.
+                                <br><br>
+                                For more photos, please visit --- <a href="https://www.facebook.com/StockbridgeGensan/posts/2358830641051081">
+                                https://www.facebook.com/StockbridgeGensan/posts/2358830641051081</a>
+                            </p>
+                            <div class="img">
+                                <img src="assets/images/gallery-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-content">
+                    <div class="box">
+                        <button class="btn" data-target="#modal2">
+                            <img src="assets/images/gallery-2.png" alt="">
+                            <h3>Celebrating Buwan ng Wika 2020</h3>
+                        </button>
+                    </div>
+                    <div class="modal" id="modal2">
+                        <div class="header">
+                            <div class="title">Celebrating Buwan ng Wika 2020</div>
+                            <button class="btn close-modal">&times;</button>
+                        </div>
+                        <div class="body">
+                            <p>
+                                August is known as the National Language Month or the Buwan ng Wika. Stockbridge celebrated Buwan ng Wika with the theme "Wika ng Kasaysayan, 
+                                Kasaysayan ng Wika" virtually from August 24 to 27, 2020. The event was filled with arts, crafts, quiz bee, and virtual games about Philippine 
+                                history, cultures, and beliefs are few of the fun activities we had during the week-long celebration. It was indeed full of knowledge and fun 
+                                at the same time. Buwan ng Wika is a time to remind the public of the importance of the Filipino language. Our country’s language shows how rich 
+                                and unique our culture and heritage. Our language bridges different communities and strengthens us as a Filipino.
+                                <br><br>
+                                For more photos, please visit --- <a href="https://www.facebook.com/StockbridgeGensan/posts/2639766206290855">https://www.facebook.com/StockbridgeGensan/posts/2639766206290855</a>
+                            </p>
+                            <div class="img">
+                                <img src="assets/images/gallery-2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-content">
+                    <div class="box">
+                        <button class="btn" data-target="#modal3">
+                            <img src="assets/images/gallery-3.png" alt="">
+                            <h3>Shaping Peace Together for the Future of our Global Leaders</h3>
+                        </button>
+                    </div>
+                    <div class="modal" id="modal3">
+                        <div class="header">
+                            <div class="title">Shaping Peace Together for the Future of our Global Leaders</div>
+                            <button class="btn close-modal">&times;</button>
+                        </div>
+                        <div class="body">
+                            <p>
+                                Stockbridge American International School celebrated International Education Week last October 26-30, 2020 with theme 
+                                "Shaping Peace Together for the Future of our Global Leaders." International week emphasized "Peace" to all countries. 
+                                It was dedicated to supporting, and knowing more about other cultures. In one week span, students celebrated and experienced 
+                                different cultures through crafts and activities. Among these was Hats Off to Country, Tourist Puzzles, Virtual Tour-Take me to Places, 
+                                and Plant Day, Fun Day! The students were able to learn about cultures and visited tourist spots of their assigned country. 
+                                Prekindergarten – Greece Grade 3 – USA Kinder – Korea Grade 3 – Canada Grade 1 – Kenya Grade 4 – Philippines Grade 1 – 
+                                Egypt Grade 5 – Australia Grade 2 – Colombia Grade 6 - Norway Grade 2 – Peru
+                                <br><br>
+                                For more photos, please visit--- <a href="https://www.facebook.com/StockbridgeGensan/posts/2693035660963909">
+                                https://www.facebook.com/StockbridgeGensan/posts/2693035660963909</a>
+                            </p>
+                            <div class="img">
+                                <img src="assets/images/gallery-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-content">
+                    <div class="box">
+                        <button class="btn" data-target="#modal4">
+                            <img src="assets/images/gallery-4.png" alt="">
+                            <h3>Bring Light and Happiness to the Hearts of our Elders</h3>
+                        </button>
+                    </div>
+                    <div class="modal" id="modal4">
+                        <div class="header">
+                            <div class="title">Bring Light and Happiness to the Hearts of our Elders</div>
+                            <button class="btn close-modal">&times;</button>
+                        </div>
+                        <div class="body">
+                            <p>
+                                SAIS conducted an outreach program at St. Vincent Strambi Home for the Aged last November 18, 2020. 
+                                The school handed-over the packed relief goods and parol with messages from the SAIS students to the home for the aged. 
+                                This simple act of showing them that they are remembered made them feel loved. 
+                                Seeing their genuine smiles and tearful eyes due to so much joy and happiness is the pure indication that despite these challenging times, 
+                                we can still be the reason for someone ’ s joy. It is a great manifestation of the true spirit of Christmas which is to spread generosity, love, 
+                                and care. Let us be the reason to bring light in someone’s darkness. Spread love, spread happiness!
+                                <br><br>
+                                For more photos, please visit --- <a href="https://www.facebook.com/StockbridgeGensan/posts/2713873028880172">
+                                https://www.facebook.com/StockbridgeGensan/posts/2713873028880172</a>
+                            </p>
+                            <div class="img">
+                                <img src="assets/images/gallery-4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-content">
+                    <div class="box">
+                        <button class="btn" data-target="#modal5">
+                            <img src="assets/images/gallery-5.png" alt="">
+                            <h3>Christmas Lighting Event goes Virtual!</h3>
+                        </button>
+                    </div>
+                    <div class="modal" id="modal5">
+                        <div class="header">
+                            <div class="title">Christmas Lighting Event goes Virtual!</div>
+                            <button class="btn close-modal">&times;</button>
+                        </div>
+                        <div class="body">
+                            <p>
+                                Christmas Lighting is an annual celebration of the JIB schools. It served as an opening program as we welcome the Christmas season. 
+                                The Stockbridge community lighted up a Christmas tree last November 23, 2020 as a symbol of life, camaraderie, and reminds us of 
+                                the spirit of Christmas. This season, we celebrated the Christmas Lighting through virtual activity. It was a different setup but 
+                                the same Christmas spirit. Because of the COVID 19 pandemic, things got different in terms of how we celebrate different events and activities. 
+                                It taught us to be strong and courageous to face different challenges in life, and to be adaptive and considerate at the same time. 
+                                As we celebrated the Christmas Lighting event, we lit up the hearts of the community as we, together, lit our Christmas trees and lights at home. 
+                                Students were asked to make arts and crafts during their MAPEH time. On the day of the event, students, teachers, guests lit up their 
+                                own lights through their stars, Christmas trees, Christmas lights, parols, and even a simple light inside their room.
+                                <br><br>
+                                For more photos, please visit --- <a href="https://www.facebook.com/StockbridgeGensan/posts/2715940842006724">https://www.facebook.com/StockbridgeGensan/posts/2715940842006724</a>
+                            </p>
+                            <div class="img">
+                                <img src="assets/images/gallery-5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-content">
+                    <div class="box">
+                        <button class="btn" data-target="#modal6">
+                            <img src="assets/images/gallery-6.png" alt="">
+                            <h3>LIONS Week Celebration</h3>
+                        </button>
+                    </div>
+                    <div class="modal" id="modal6">
+                        <div class="header">
+                            <div class="title">LIONS Week Celebration</div>
+                            <button class="btn close-modal">&times;</button>
+                        </div>
+                        <div class="body">
+                            <p>
+                                The weeklong celebration was a collaboration of both Gensan and Davao schools. The students actively enjoyed the different activities 
+                                that were lined up for them such as Integrity pot craft making and Tagxedo. Crafts and arts excite Stockbridge kids during the first 
+                                and second days of the week. On the third day, the school prepared a nobility webinar with the theme “Developing Young Global Leaders: 
+                                A Career Forum.” The said webinar became more interesting for the students because of the presence of the invited speakers – 
+                                Mr. Jesse Tan, Dr. Adora Auguis, Ms. Louvy Gal, and Mr. Ricardo Pascua Jr. These speakers shared their backgrounds, professions, 
+                                and how noble their jobs are to inspire our Stockbridge kids to share their helping hands and services to the family and community. 
+                                Our Gensan students also had a chance to meet Davao students on the fourth day. And the last day of celebration was intended for 
+                                the leadership forum entitled “Unleashing the Leader in Me: A Leadership Forum.” Prominent and famous names in the business industry 
+                                such as Ms. Maryelle Bergavera, Dr. Deanne Corrine Tabar, the CEO of the NCCC Malls, Mr. Lafayette Tan, and the chairperson of the 
+                                Joji Ilagan Schools herself, Ms. Joji Bian. These business leaders were able to impart knowledge, techniques, strategies, and skills 
+                                on how to be effective global leaders.
+                                <br><br>
+                                For more photos, please visit --- <a href="https://www.facebook.com/StockbridgeGensan/posts/2716113948656080">
+                                https://www.facebook.com/StockbridgeGensan/posts/2716113948656080</a>
+                            </p>
+                            <div class="img">
+                                <img src="assets/images/gallery-6.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-content">
+                    <div class="box">
+                        <button class="btn" data-target="#modal7">
+                            <img src="assets/images/gallery-7.png" alt="">
+                            <h3>Celebrating Literacy Week 2019</h3>
+                        </button>
+                    </div>
+                    <div class="modal" id="modal7">
+                        <div class="header">
+                            <div class="title">Celebrating Literacy Week 2019</div>
+                            <button class="btn close-modal">&times;</button>
+                        </div>
+                        <div class="body">
+                            <p>
+                                Stockbridge celebrated Literacy Week last September 23-27, 2019. Its goal is to highlight the value of literacy among the students in 
+                                various activities. Teachers invited mystery readers each day to read to the students a story for 15-20 minutes. Students engaged in 
+                                book exchange where they could bring books they no longer need. They brought many books but only took one book of their choice. 
+                                The books which are collected were turn-over during the outreach program. There was also an Essay Writing Competition where students 
+                                from Grades 3-5 participated. On the other hand, students from Kinder to Grade 3 play a part in the storytelling. Aside from those 
+                                activities, they also performed role-playing adapted from a short story of their choice.
+                                <br><br>
+                                For more photos, please visit --- https://www.facebook.com/StockbridgeOfficial/posts/3029451470439345
+                            </p>
+                            <div class="img">
+                                <img src="assets/images/gallery-7.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-content">
+                    <div class="box">
+                        <button class="btn" data-target="#modal8">
+                            <img src="assets/images/gallery-8.png" alt="">
+                            <h3>Unity in Diversity</h3>
+                        </button>
+                    </div>
+                    <div class="modal" id="modal8">
+                        <div class="header">
+                            <div class="title">Unity in Diversity</div>
+                            <button class="btn close-modal">&times;</button>
+                        </div>
+                        <div class="body">
+                            <p>
+                                Last October 21-25, 2019 the school celebrated International Week. On the first day, students participated in an activity called 
+                                “Stockbridge Around the World” where they explored the world by pinning their home countries on the map and connecting them to where Stockbridge is. 
+                                The next day, they engaged in a “Unity in Diversity: Hand Painting” activity. The school also conducted an essay writing competition 
+                                with the topic “How can we unite amidst diversity?” of which Isaac Dean Navarro bagged the first place. Students also participated in 
+                                the Sustainable Development Goals Poster Making Contest, where the entry of Datu Edilbasher Mahadali was declared as the winner. 
+                                The whole school community took part in a ‘Global Tour” booth making activity to create live country exhibits of the countries they represent. 
+                                The weeklong celebration culminated with a “Grand Tour” where students and parents immersed themselves to witness an international 
+                                runway of national costumes, enjoy cultural performances of the students, go around the “Global Tour” live country exhibits where 
+                                Pre-Kindergarten 2 who represents Thailand won first place. At the end of the tour, students decorated their cupcakes to form the different 
+                                flags of the world. The ceremony was graced by Ms. Nicole Hao Bian, Vice President for Education Development of the JIB International 
+                                Schools as she welcomed distinguished guests; Dr. Mary Jane Mejorada and Dr. Isidora Cermino, Education Program Supervisors from the Department 
+                                of Education Region 11, Ms, Danna Advincula Faistauer representing the Consulate Office of Austria and Ms. Christine Kaindoy of CK 
+                                Weddings and Events. To mark the opening, Ms. Nicole Hao Bian and guests together with student representatives engaged in a “Unity 
+                                in Diversity” ceremonial of uniting and tying of the flags to signify the unity among countries.
+                                <br><br>
+                                For more photos, please visit --- <a href="https://www.facebook.com/StockbridgeOfficial/posts/3087351767982648">
+                                https://www.facebook.com/StockbridgeOfficial/posts/3087351767982648</a>
+                            </p>
+                            <div class="img">
+                                <img src="assets/images/gallery-8.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-content">
+                    <div class="box">
+                        <button class="btn" data-target="#modal9">
+                            <img src="assets/images/gallery-9.png" alt="">
+                            <h3>Give Light on Christmas Day</h3>
+                        </button>
+                    </div>
+                    <div class="modal" id="modal9">
+                        <div class="header">
+                            <div class="title">Give Light on Christmas Day</div>
+                            <button class="btn close-modal">&times;</button>
+                        </div>
+                        <div class="body">
+                            <p>
+                                To formally welcome the Christmas season, the school celebrated Christmas Tree Lighting with the theme “Give Light on Christmas Day". 
+                                The event was graced by the founder of JIB International Schools Ms. Joji Ilagan Bian, who gave an inspirational talk to the students and parents. 
+                                The open ground was lit with different lights from the parol presentation per level. 
+                                Surroundings were filled with Christmas goodies as parents participated in the bazaar. 
+                                Selected students presented ten symbols of Christmas at the event. 
+                                The dance club led everyone to the mob dance as the glee club serenaded guests with Christmas carols. 
+                                The highlight of the event was the gift-giving to the orphans of Bahay Pasilungan.
+                                <br><br>
+                                For more photos, please visit --- <a href="https://www.facebook.com/StockbridgeOfficial/posts/3172287129489111">
+                                https://www.facebook.com/StockbridgeOfficial/posts/3172287129489111</a>
+                            </p>
+                            <div class="img">
+                                <img src="assets/images/gallery-9.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-content">
+                    <div class="box">
+                        <button class="btn" data-target="#modal10">
+                            <img src="assets/images/gallery-10.png" alt="">
+                            <h3>Stockbridge Twelve Gifts of Christmas</h3>
+                        </button>
+                    </div>
+                    <div class="modal" id="modal10">
+                        <div class="header">
+                            <div class="title">Stockbridge Twelve Gifts of Christmas</div>
+                            <button class="btn close-modal">&times;</button>
+                        </div>
+                        <div class="body">
+                            <p>
+                                Stockbridge American International School had its Christmas Show with the theme “12 Gifts of Christmas” last December 11, 2019, 
+                                at the Abreeza Ayala Mall Event Center, Davao City. The event showcased the students' talents as they presented on stage with 
+                                their colorful costumes and performance. The Christmas show centered on a girl named Emma played by a kinder student who was 
+                                sleeping when she suddenly heard a sound and later found out it was Santa. She wants to make sure it was him, so she got up and checked. 
+                                To her surprise, she saw partridges in pear trees and turtledoves! She tried to go back to sleep because she was not convinced and 
+                                thinking everything is just a dream, another form of gift visited her. They were French hens! The rest of the 12 gifts visited her too. 
+                                It consisted of calling birds, golden rings, geese, swans, milkmaids, ladies dancing, lords leaping, pipers piping, and drummers which 
+                                were all played by the different grade levels. After Emma has witnessed all of them, she was amazed and asked herself, were they real? 
+                                Are they really from Santa? Then Santa showed herself to Emma telling her that she deserved to be amazed by all that she has seen 
+                                because she was not on the naughty list. After that, she went back to sleep knowing that her kindness has rewarded.
+                                <br><br>
+                                For more photos, please visit-- <a href="https://www.facebook.com/StockbridgeOfficial/posts/3201077916610032">
+                                https://www.facebook.com/StockbridgeOfficial/posts/3201077916610032</a>
+                            </p>
+                            <div class="img">
+                                <img src="assets/images/gallery-10.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-content">
+                    <div class="box">
+                        <button class="btn" data-target="#modal11">
+                            <img src="assets/images/gallery-11.png" alt="">
+                            <h3>Celebrating Chuseok Festival</h3>
+                        </button>
+                    </div>
+                    <div class="modal" id="modal11">
+                        <div class="header">
+                            <div class="title">Celebrating Chuseok Festival</div>
+                            <button class="btn close-modal">&times;</button>
+                        </div>
+                        <div class="body">
+                            <p>
+                                Last October 2, 2020, the school celebrated Chuseok Festival with the theme’ “Celebrating Harvest Across Borders; 
+                                The Stockbridge Way!” Students have witnessed the colourful culture of Korea across borders through watching some 
+                                videos of the different cities in Korea and have shown their creativity in making some different Korean crafts that 
+                                represents the culture of Korea. For the Pre-Kindergarten students, they have formed the puzzle of the stone artworks 
+                                from Jeju Island, the “Dol Hareubang”. Kinder to Grade 1 students have made the “Wooden fish of Gamcheon craft” 
+                                out of card boards and coloured them with some poster colours available in their house. Grade 2 to Grade 3 students 
+                                on the other hand has made some “Songpyeon craft” out of clay doughs and construction papers. Some kids especially 
+                                the Korean students have also made some delicious real “Songpyeon” with the help of their parents. 
+                                Grade 4 to Grade 5 students has shown their creativity of making the “Hanbok origami”. For the Grade 6 – Grade 7 students, 
+                                they have made their DIY “TAL” mask.
+                                <br><br>
+                                For more photos, please visit --- <a href="https://www.facebook.com/StockbridgeOfficial/posts/3959356530782163">
+                                https://www.facebook.com/StockbridgeOfficial/posts/3959356530782163</a>
+                            </p>
+                            <div class="img">
+                                <img src="assets/images/gallery-11.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-content">
+                    <div class="box">
+                        <button class="btn" data-target="#modal12">
+                            <img src="assets/images/gallery-12.png" alt="">
+                            <h3>Annual International Education Week 2020</h3>
+                        </button>
+                    </div>
+                    <div class="modal" id="modal12">
+                        <div class="header">
+                            <div class="title">Annual International Education Week 2020</div>
+                            <button class="btn close-modal">&times;</button>
+                        </div>
+                        <div class="body">
+                            <p>
+                                Stockbridge celebrated the International Education Week 2020 with the theme “One in Mission for Peace and Sustainability: 
+                                The #StockbridgeStudents Voyage Around the World” last October 30, 2020. The event was a week-long celebration filled with 
+                                activities that had immerse the Stockbridge Students intending to promote peace and sustainability the Stockbridge Way. 
+                                The celebration started with a kick-off virtual ceremony via Zoom. The ceremony exhibited the video of last years’ celebration 
+                                and the video teaser for this year. Students participated in various activities to further integrate them on the purpose of 
+                                the event which is to be the emissary of peace and sustainability, not to mention the understanding of the culture of different 
+                                people across the globe. To culminate the celebration, the school invited a guest speaker from South Korea Mr. Graham Salzer 
+                                to deepen the concept of International Education. Ms. Joji Ilagan Bian, founder of Joji Ilagan International Schools was also 
+                                present to witness the event. It showcased the astonishing artworks and crafts of the students from Africa, Japan, China, 
+                                France, Brazil, Norway, Sweden, and Thailand. A sense of fulfilment dominated the virtual field as smile of success took over the screen.
+                                <br><br>
+                                For more photos, please visit --- <a href="https://www.facebook.com/StockbridgeOfficial/posts/4039647519419730">
+                                https://www.facebook.com/StockbridgeOfficial/posts/4039647519419730</a>
+                            </p>
+                            <div class="img">
+                                <img src="assets/images/gallery-12.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-content">
+                    <div class="box">
+                        <button class="btn" data-target="#modal13">
+                            <img src="assets/images/gallery-13.jpg" alt="">
+                            <h3>Stockbridge LIONS Roar to the World as Young Global Leaders</h3>
+                        </button>
+                    </div>
+                    <div class="modal" id="modal13">
+                        <div class="header">
+                            <div class="title">Stockbridge LIONS Roar to the World as Young Global Leaders</div>
+                            <button class="btn close-modal">&times;</button>
+                        </div>
+                        <div class="body">
+                            <p>
+                                LIONS WEEK event was a week-long celebration filled with tons of activities. The event started last November 23, 2020, were students 
+                                created crafts, poster, quotes and tagxedo. On the third day of the event, it was full of nobility words through zoom forum from the 
+                                guest speakers Mr. Jesse Tan, Miss Louvy Gal, Doctor Adora Auguis and Mr. Ricardo Victor de Vera Pascua Jr. of which they shared their 
+                                backgrounds, professions and services to their family and community to inspire our students. Also, #StockbridgeKids created cards and 
+                                send message to their families and friends. The celebration ended with Leadership Forum where we invited different leaders from different 
+                                places. The event was graced by founder of Joji Ilagan International Schools Ms. Joji Ilagan Bian, NCCC President Mr. Lafayette Lim, The 
+                                Skin Specialist Dermatology & Facial Clinic owner Ms. Deanna Corrine Tabar and OPPO manager Marylle Bergavera where students were able to 
+                                gain knowledge, techniques, strategies and skills on how to become effective global leaders.
+                                <br><br>
+                                For more photos, please visit--- <a href="https://www.facebook.com/StockbridgeOfficial/posts/4112461768804971">
+                                https://www.facebook.com/StockbridgeOfficial/posts/4112461768804971</a>
+                            </p>
+                            <div class="img">
+                                <img src="assets/images/gallery-13.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-content">
+                    <div class="box">
+                        <button class="btn" data-target="#modal14">
+                            <img src="assets/images/gallery-14.jpg" alt="">
+                            <h3>December Delights: Love is the Light of Christmas</h3>
+                        </button>
+                    </div>
+                    <div class="modal" id="modal14">
+                        <div class="header">
+                            <div class="title">December Delights: Love is the Light of Christmas</div>
+                            <button class="btn close-modal">&times;</button>
+                        </div>
+                        <div class="body">
+                            <p>
+                                Last November 20, 2020, the school celebrated Christmas Star Lighting virtually. The event is filled with fun and memorable activities that 
+                                involved everyone to welcome the Christmas season and to give light to the world despite of difficulties we are currently facing due to pandemic. 
+                                Students strengthened the bond of togetherness and love as they created crafts for the symbols of Christmas. They even shared about what those 
+                                symbols represented. To share their personal experiences as they welcome the spirit of Christmas, kids prepared a video on how they are going to 
+                                celebrate joyfully by sharing with us what is Christmas to them. To make the celebration more special, teachers participated as they composed 
+                                this years’ Christmas community song entitled “Thank you for the love.” The highlight of the celebration was the launching of the donation drive 
+                                that aims to extend help to our community. Indeed, unity and love makes Stockbridge the light of Christmas.
+                                <br><br>
+                                For more photos, please visit --- <a href="https://www.facebook.com/StockbridgeOfficial/posts/4099043883480093">
+                                https://www.facebook.com/StockbridgeOfficial/posts/4099043883480093</a>
+                            </p>
+                            <div class="img">
+                                <img src="assets/images/gallery-14.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-content">
+                    <div class="box">
+                        <button class="btn" data-target="#modal15">
+                            <img src="assets/images/gallery-15.jpg" alt="">
+                            <h3>Stockbridge Helping Hands, Stronger Together</h3>
+                        </button>
+                    </div>
+                    <div class="modal" id="modal15">
+                        <div class="header">
+                            <div class="title">Stockbridge Helping Hands, Stronger Together!</div>
+                            <button class="btn close-modal">&times;</button>
+                        </div>
+                        <div class="body">
+                            <p>
+                                Giving back to the community can help people feel more at peace with the world knowing they have done their part in fulfilling the mission 
+                                of helping others. SAIS curriculum does not only aim to develop the intellectual aspect but also the social responsibility of the students. 
+                                With the current situation that we are all in now such as these pandemic and super strong typhoon that caused flooding and other disastrous 
+                                effects, the call to help is essential. During the Christmas Star Lighting activity, the school announced the launching of our Outreach Program 
+                                that aims to extend our services to our community. It is called "Stockbridge Helping Hands, Stronger Together". Many generous #StockbridgeFamilies 
+                                supported the cause. They were able to fulfill the mission of extending services to the community because of the parents and family. 
+                                All the donations were turned-over to the Philippine Air Force-TOG 11 as partner because of their specialization in providing air transportation 
+                                for relief goods and other essential items. Helping hands are an integral part of it all and the mission continues!
+                                <br><br>
+                                For more photos, please visit --- <a href="https://www.facebook.com/StockbridgeOfficial/posts/4178746988843115rs">
+                                https://www.facebook.com/StockbridgeOfficial/posts/4178746988843115rs</a>
+                            </p>
+                            <div class="img">
+                                <img src="assets/images/gallery-15.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-content">
+                    <div class="box">
+                        <button class="btn" data-target="#modal16">
+                            <img src="assets/images/gallery-16.png" alt="">
+                            <h3>Finding Light this Christmas</h3>
+                        </button>
+                    </div>
+                    <div class="modal" id="modal16">
+                        <div class="header">
+                            <div class="title">Finding Light this Christmas!</div>
+                            <button class="btn close-modal">&times;</button>
+                        </div>
+                        <div class="body">
+                            <p>
+                                The school celebrated Christmas Show with the theme “Christmas around the World” last December 18, 2020. Stockbridge prepared a very 
+                                exciting and most awaited show for all grade levels that showcased not just the talents of #StockbridgeKids but also symbols and 
+                                traditions of different countries around the world. Before the show started, the SAIS-Davao presented the documentary video about 
+                                the outreach program called “Stockbridge Helping Hands” to share the blessings to other people who have been suffering during the 
+                                time of pandemic. Teachers from both Davao and Gensan performed dance number to start the program. Everyone embraced the momentous 
+                                occasion with high spirits sharing hope and love amidst pandemic. Students in all levels showcased their Christmas carols with their 
+                                glittered and colorful Christmas costumes. They happily dance during their Christmas presentation. Selected students read us Christmas 
+                                stories about 12 gifts of Christmas and the joyous event ended with singing and dancing of our Christmas station ID “Thank you for the Love”.
+                                <br><br>
+                                For more photos, please visit --- <a href="https://www.facebook.com/StockbridgeOfficial/posts/4144592675591880">
+                                https://www.facebook.com/StockbridgeOfficial/posts/4144592675591880</a>
+                            </p>
+                            <div class="img">
+                                <img src="assets/images/gallery-16.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="overlay"></div>
+            </div>
+            
+            <script src="assets/js/modal.js"></script>
+        </div>
+    </section>
+    <!--news and media ends here-->
+    <!--video gallery starts here-->
+    <section class="video-gallery">
+        <div class="heading">
+            <h3>Video Gallery</h3>
+        </div>
+          <div class="container">
+              <div class="main-video">
+                  <div class="video">
+                      <video src="assets/videos/news-media-video-1.mp4" controls muted autoplay></video>
+                      <h3 class="title">01. Proud being in Stockbridge</h3>
+                  </div>
+              </div>
+      
+              <div class="video-list">
+                  <div class="vid active">
+                      <video src="assets/videos/news-media-video-1.mp4" muted></video>
+                      <h3 class="title">01. Proud being in Stockbridge</h3>
+                  </div>
+                  <div class="vid">
+                      <video src="assets/videos/news-media-video-2.mp4" muted></video>
+                      <h3 class="title">02. Kindergarten</h3>
+                  </div>
+                  <div class="vid">
+                      <video src="assets/videos/news-media-video-3.mp4" muted></video>
+                      <h3 class="title">03. Stockbridge Students</h3>
+                  </div>
+                  <div class="vid">
+                      <video src="assets/videos/news-media-video-4.mp4" muted></video>
+                      <h3 class="title">04. Crafts</h3>
+                  </div>
+                  <div class="vid">
+                    <video src="assets/videos/news-media-video-5.mp4" muted></video>
+                    <h3 class="title">05. Jacob Joseph Cangero</h3>
+                </div>
+                <div class="vid">
+                    <video src="assets/videos/news-media-video-6.mp4" muted></video>
+                    <h3 class="title">06. STOCKBRIDGE VIRTUAL WELLNESS AND CARE</h3>
+                </div>
+              </div>
+          </div>
+      </section>
+      <script>
+        let listVideo = document.querySelectorAll('.video-list .vid');
+        let mainVideo = document.querySelector('.main-video video');
+        let title = document.querySelector('.main-video .title');
+      
+        listVideo.forEach(video =>{
+            video.onclick = () =>{
+                listVideo.forEach(vid => vid.classList.remove('active'));
+                video.classList.add('active');
+                if(video.classList.contains('active')){
+                    let src = video.children[0].getAttribute('src');
+                    mainVideo.src = src;
+                    let text = video.children[1].innerHTML;
+                    title.innerHTML = text;
+                };
+            };
+        });
+      </script>
+    <!--video gallery ends here-->
+
+    <!--footer starts here-->
+    <footer>
+        <div class="map top">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.4185943997527!2d125.58090967577152!3d7.077372316477603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f96d7aec7280ef%3A0x81da66bcfd0d5753!2sStockbridge%20American%20International%20School%20Davao!5e0!3m2!1sen!2sph!4v1698081930020!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
+          <div class="content grid top">
+            <div class="box">
+              <div class="logo">
+                <img src="assets/images/logo-header.png" alt="">
+              </div>
+              <p>© Stockbridge American International School 2023. <br>All Rights Reserved. <br>Sixeleven Global Services</p>
+              <div class="social flex">
+                <a href="https://www.facebook.com/StockbridgeOfficial/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/StockBridgeIntl"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/stockbridgeofficial/?hl=en"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@stockbridgeinternationalsc8483" target="_blank"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            
+            <div class="box">
+              <h2>Quick Links</h2>
+              <ul>
+                <li><i class="fas fa-angle-double-right"></i><a href="our-story.html">Our Story</a></li>
+                <li><i class="fas fa-angle-double-right"></i><a href="school-calendar.html">School Calendar</a></li>
+                <li><i class="fas fa-angle-double-right"></i><a href="global-business-leadership.html">Global Business Leadership</a></li>
+                <li><i class="fas fa-angle-double-right"></i><a href="news-media.html">News and Media</a></li>
+                <li><i class="fas fa-angle-double-right"></i><a href="blog.html">Blog</a></li>
+                <li><i class="fas fa-angle-double-right"></i><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+    
+    
+            <div class="box">
+              <h2>Services</h2>
+              <div class="icon flex">
+                <div class="i">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="text">
+                  <h3>Address</h3>
+                  <p>Davao City Bugac, Maa Road Davao City</p>
+                </div>
+              </div>
+              <div class="icon flex">
+                <div class="i">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="text">
+                  <h3>Tel No.</h3>
+                  <p>(082) 225 1847</p>
+                </div>
+              </div>
+              <div class="icon flex">
+                <div class="i">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="text">
+                  <h3>Mobile No.</h3>
+                  <p>0922 250 1492</p>
+                </div>
+              </div>
+              
+              <div class="icon flex">
+                <div class="i">
+                  <i class="far fa-envelope"></i>
+                </div>
+                <div class="text">
+                  <h3>Email</h3>
+                  <p>info@stockbridge.ph</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--footer ends here-->
+    
+</body>
+</html>

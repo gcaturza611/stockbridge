@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/stockbridge_no_bg.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <!--navbar starts here-->
+    <header>
+      <a href="index.html" class="logo">
+        <img src="assets/images/stockbridge_no_bg.png" alt="">
+      </a>
+      <div class="navigation">
+          <ul class="menu">
+              <div class="close-btn"></div>
+              <li class="menu-item"><a href="index.html">home</a></li>
+              <li class="menu-item">
+                  <a  class="sub-btn" href="#">about us <i class="fas fa-angle-down"></i></a>
+              <ul class="sub-menu">
+                <li class="sub-item"><a href="our-story.html">our story</a></li>
+                <li class="sub-item"><a href="mvc-values.html">Our Mission, Vision And Core Values</a></li>
+                <li class="sub-item"><a href="our-saga.html">Our SAGA</a></li>
+                <li class="sub-item"><a href="int-partners.html">Our International Partners</a></li>
+                <li class="sub-item"><a href="stockbridge-adv.html">The Stockbridge Advantage</a></li>
+                <li class="sub-item"><a href="our-facilities.html">Our Facilities</a></li>
+                <li class="sub-item"><a href="admission.html">Admission</a></li>
+              </ul>
+              </li>
+              <li class="menu-item">
+                  <a class="sub-btn" href="#">our programs <i class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                  <li class="sub-item"><a href="early-childhood.html">Early Childhood</a></li>
+                  <li class="sub-item"><a href="elementary.html">Elementary</a></li>
+                  <li class="sub-item"><a href="junior-high.html">Junior High School</a></li>
+                  <li class="sub-item"><a href="vc-learning.html">Virtual Classroom Learning</a></li>
+                  <li class="sub-item"><a href="curriculum.html">Our Curriculum</a></li>
+                  <li class="sub-item"><a href="school-calendar.html">Our School Calendar</a></li>
+                </ul>
+                </li>
+              <li class="menu-item">
+                  <a class="sub-btn" href="#">our highlights <i class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                  <li class="sub-item"><a href="global-business-leadership.html">global business leadership</a></li>
+                  <li class="sub-item"><a href="entrep-inno.html">Entrepreneurship And Innovations</a></li>
+                  <li class="sub-item"><a href="leader-personal-dev.html">Leadership And Personality Development</a></li>
+                  <li class="sub-item"><a href="international-education-week.html">International Education Week</a></li>
+                  <li class="sub-item"><a href="lions-week.html">LIONS Week</a></li>
+                  <li class="sub-item"><a href="clubs-organizations.html">Clubs and Organizations</a></li>
+                  <li class="sub-item"><a href="community-service.html">Community Service</a></li>
+                  <li class="sub-item"><a href="leadership-engagement-trips.html">Leadership And Engagement Trips</a></li>
+                </ul>
+                </li> 
+              <li class="menu-item"><a href="news-media.html">news and media</a></li>
+              <li class="menu-item"><a href="blog.html">blog</a></li>
+              <li class="menu-item"><a href="contact.html">contact us</a></li>
+          </ul>
+      </div>
+      <div class="menu-btn">
+          
+      </div>
+  </header>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".sub-btn").click(function(){
+                $(this).next(".sub-menu").slideToggle();
+            });
+        });
+    
+        var menu = document.querySelector(".menu");
+        var menuBtn = document.querySelector(".menu-btn");
+        var closeBtn = document.querySelector(".close-btn");
+    
+        menuBtn.addEventListener("click", () => {
+            menu.classList.add("active");
+        });
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove("active");
+        });
+    
+        //javascript for the navigation bar effects on scroll
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+      </script>
+    <!--navbar ends here-->
+
+    <!--contactus content starts here-->
+    <section class="contact">
+        <div class="container">
+            <div class="left">
+                <div class="form-wrapper">
+                    <div class="contact-heading">
+                        <h1>Let's work together<span>.</span></h1>
+                        <p class="text">Or reach us via: <a href="mailto:info@stockbridge.com">info@stockbridge.com</a></p></p>
+                    </div>
+                    <form action="index.html" method="post" class="contact-form">
+                        <div class="input-wrap">
+                            <input class="contact-input" autocomplete="off" name="First name" type="text" required>
+                            <label>First Name</label>
+                            <i class="icon fa-solid fa-address-card"></i>
+                        </div>
+
+                        <div class="input-wrap">
+                            <input class="contact-input" autocomplete="off" name="Last name" type="text" required>
+                            <label>Last Name</label>
+                            <i class="icon fa-solid fa-address-card"></i>
+                        </div>
+
+                        <div class="input-wrap w-100">
+                            <input class="contact-input" autocomplete="off" name="Email" type="text" required>
+                            <label>Email</label>
+                            <i class="icon fa-solid fa-envelope"></i>
+                        </div>
+
+                        <div class="input-wrap textarea w-100">
+                            <textarea name="Message" autocomplete="off" class="contact-input" required></textarea>
+                            <label>Message</label>
+                            <i class="icon fa-solid fa-inbox"></i>
+                        </div>
+
+                        <div class="contact-buttons">
+                            <button class="btn upload">
+                                <span>
+                                    <i class="fa-solid fa-paperclip"></i>Add attachment
+                                </span>
+                                <input type="file" name="attachment">
+                            </button>
+                            <input type="submit" value="Send message" class="btn">
+                        </div>
+                    </form>
+                </div>
+            </div>
+           <!--<div class="right">
+                <div class="image-wrapper">
+                    <img src="images/home-header.jpg" class="img">
+                </div>
+                <div class="wave-wrap">
+                    <svg class="wave" viewBox="0 0 783 1536" fill="none"
+                    xmlns="hhtp://www.w3.org/2000/svg">
+                <path id="wave"
+                    d="M236.705 1356.18C200.542 1483.72 64.5004 1528.54 1
+                    1535V1H770.538C793.858 63.1213 797.23 196.197 624.165 231.531C407.883 275.698 274 331.715 450.884 568.709C627.393
+                    805.704 510.079 815.399 347.561 939.282C185.043 1063.17 281.908 1196.74 236.705 1356.18Z" />
+                </svg>
+                </div>-->
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/contact.js"></script>
+    <!--contactus content ends here-->
+
+    <!--footer starts here-->
+    <footer>
+      <div class="map top">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.4185943997527!2d125.58090967577152!3d7.077372316477603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f96d7aec7280ef%3A0x81da66bcfd0d5753!2sStockbridge%20American%20International%20School%20Davao!5e0!3m2!1sen!2sph!4v1698081930020!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
+        <div class="content grid top">
+          <div class="box">
+            <div class="logo">
+              <img src="assets/images/logo-header.png" alt="">
+            </div>
+            <p>© Stockbridge American International School 2023. <br>All Rights Reserved. <br>Sixeleven Global Services</p>
+            <div class="social flex">
+              <a href="https://www.facebook.com/StockbridgeOfficial/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/StockBridgeIntl"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/stockbridgeofficial/?hl=en"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/@stockbridgeinternationalsc8483" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          
+          <div class="box">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><i class="fas fa-angle-double-right"></i><a href="our-story.html">Our Story</a></li>
+              <li><i class="fas fa-angle-double-right"></i><a href="school-calendar.html">School Calendar</a></li>
+              <li><i class="fas fa-angle-double-right"></i><a href="global-business-leadership.html">Global Business Leadership</a></li>
+              <li><i class="fas fa-angle-double-right"></i><a href="news-media.html">News and Media</a></li>
+              <li><i class="fas fa-angle-double-right"></i><a href="blog.html">Blog</a></li>
+              <li><i class="fas fa-angle-double-right"></i><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+  
+  
+          <div class="box">
+            <h2>Services</h2>
+            <div class="icon flex">
+              <div class="i">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="text">
+                <h3>Address</h3>
+                <p>Davao City Bugac, Maa Road Davao City</p>
+              </div>
+            </div>
+            <div class="icon flex">
+              <div class="i">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="text">
+                <h3>Tel No.</h3>
+                <p>(082) 225 1847</p>
+              </div>
+            </div>
+            <div class="icon flex">
+              <div class="i">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="text">
+                <h3>Mobile No.</h3>
+                <p>0922 250 1492</p>
+              </div>
+            </div>
+            
+            <div class="icon flex">
+              <div class="i">
+                <i class="far fa-envelope"></i>
+              </div>
+              <div class="text">
+                <h3>Email</h3>
+                <p>info@stockbridge.ph</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+      <!--footer ends here-->
+    
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Classroom Learning</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/stockbridge_no_bg.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <!--navbar starts here-->
+    <header>
+        <a href="index.html" class="logo">
+          <img src="assets/images/stockbridge_no_bg.png" alt="">
+        </a>
+        <div class="navigation">
+            <ul class="menu">
+                <div class="close-btn"></div>
+                <li class="menu-item"><a href="index.html">home</a></li>
+                <li class="menu-item">
+                    <a  class="sub-btn" href="#">about us <i class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                  <li class="sub-item"><a href="our-story.html">our story</a></li>
+                  <li class="sub-item"><a href="mvc-values.html">Our Mission, Vision And Core Values</a></li>
+                  <li class="sub-item"><a href="our-saga.html">Our SAGA</a></li>
+                  <li class="sub-item"><a href="int-partners.html">Our International Partners</a></li>
+                  <li class="sub-item"><a href="stockbridge-adv.html">The Stockbridge Advantage</a></li>
+                  <li class="sub-item"><a href="our-facilities.html">Our Facilities</a></li>
+                  <li class="sub-item"><a href="admission.html">Admission</a></li>
+                </ul>
+                </li>
+                <li class="menu-item">
+                    <a class="sub-btn" href="#">our programs <i class="fas fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li class="sub-item"><a href="early-childhood.html">Early Childhood</a></li>
+                    <li class="sub-item"><a href="elementary.html">Elementary</a></li>
+                    <li class="sub-item"><a href="junior-high.html">Junior High School</a></li>
+                    <li class="sub-item"><a href="vc-learning.html">Virtual Classroom Learning</a></li>
+                    <li class="sub-item"><a href="curriculum.html">Our Curriculum</a></li>
+                    <li class="sub-item"><a href="school-calendar.html">Our School Calendar</a></li>
+                  </ul>
+                  </li>
+                <li class="menu-item">
+                    <a class="sub-btn" href="#">our highlights <i class="fas fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li class="sub-item"><a href="global-business-leadership.html">global business leadership</a></li>
+                    <li class="sub-item"><a href="entrep-inno.html">Entrepreneurship And Innovations</a></li>
+                    <li class="sub-item"><a href="leader-personal-dev.html">Leadership And Personality Development</a></li>
+                    <li class="sub-item"><a href="international-education-week.html">International Education Week</a></li>
+                    <li class="sub-item"><a href="lions-week.html">LIONS Week</a></li>
+                    <li class="sub-item"><a href="clubs-organizations.html">Clubs and Organizations</a></li>
+                    <li class="sub-item"><a href="community-service.html">Community Service</a></li>
+                    <li class="sub-item"><a href="leadership-engagement-trips.html">Leadership And Engagement Trips</a></li>
+                  </ul>
+                  </li> 
+                <li class="menu-item"><a href="news-media.html">news and media</a></li>
+                <li class="menu-item"><a href="blog.html">blog</a></li>
+                <li class="menu-item"><a href="contact.html">contact us</a></li>
+            </ul>
+        </div>
+        <div class="menu-btn">
+            
+        </div>
+    </header>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".sub-btn").click(function(){
+                $(this).next(".sub-menu").slideToggle();
+            });
+        });
+    
+        var menu = document.querySelector(".menu");
+        var menuBtn = document.querySelector(".menu-btn");
+        var closeBtn = document.querySelector(".close-btn");
+    
+        menuBtn.addEventListener("click", () => {
+            menu.classList.add("active");
+        });
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove("active");
+        });
+    
+        //javascript for the navigation bar effects on scroll
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+      </script>
+    <!--navbar ends here-->
+
+    <!--our story content starts here-->
+    <section class="vc-learning">
+        <div class="container">
+            <div class="text">
+                <p>
+                    In light of the global pandemic, Stockbridge developed a Flexible Learning Program in response to the challenge of providing continuity of learning 
+                    and enhanced learning modalities to our young learners most especially at this time.
+                    <br><br>
+                    The Stockbridge Flexible Learning Program is an innovative approach to learning that addresses our current social environment. 
+                    It is informed by extensive research on best practices from both the local and international community. 
+                    It is also based on the Department of Education’s Flexible Delivery Options (D.O. 21 s. 2019) and Learning Continuity Plan. 
+                    The program is further enhanced and complemented by learning frameworks of our international education partners, the Fieldwork Education (UK) 
+                    and the Nacel International School Systems (NISS, Minnesota and USA).
+                </p>
+                
+            </div>
+            <div class="content">
+                <div class="heading">
+                    <h3>Highlights of the Stockbridge Virtual Classroom Learning Program:</h3>
+                </div>
+                <ul>
+                    <li><h2>International, Innovative and Dynamic Curriculum</h2>
+                        <ul>
+                            <p>
+                                The Stockbridge curriculum is built into the framework of our international education partners 
+                                (Fieldwork, UK; NACEL International School Systems, USA) which provides breadth and depth to student learning. 
+                                School leaders, teachers and students have access to a global network of support resources.
+                            </p>
+                        </ul>
+                    </li>
+                    <li><h2>Hybrid Learning Model</h2>
+                        <ul>
+                            <p>
+                                Students learn with classmates through both online and offline activities. Live and online classes are done to foster 
+                                collaborative learning and independent home-based activities with or without parents’ guidance are given to reinforce learning. 
+                                This is to consider parent’s schedule, multi-child household and availability of connectivity.
+                            </p>
+                        </ul>
+                    </li>
+                    <li><h2>Rich Learning Experiences for Engagement</h2>
+                        <ul>
+                            <p>
+                                Students get excited for each session. Different learning experiences are used according to session outcomes and learners’ needs. 
+                                This includes but not limited to big group classes, small focused group meetings and personalized one-on-one learning. 
+                                Exciting activities to strengthen student learning is also used such as gamification of learning, virtual tours and learning 
+                                activities using different applications.
+                            </p>
+                        </ul>
+                    </li>
+                    <li><h2>Learning that is Focused on Essential and Core Competencies</h2>
+                        <ul>
+                            <p>
+                                Each class session is carefully planned out to make sure that learners meet their goals for the week. 
+                                Lessons are delivered in chunks or modules and are seamlessly integrated to develop a deep understanding of different concepts across subject areas. 
+                                Assessment is flexible and processed focused rather than product/output-focused.
+                            </p>
+                        </ul>
+                    </li>
+                    <li><h2>Professional Academic Network</h2>
+                        <ul>
+                            <p>
+                                Being a part of the exclusive network of the JIB International Schools, all teachers have undergone training sessions and workshops 
+                                and individual feedbacking as early as May to prepare for the coming school year. This is supported by in-school trainings conducted
+                                by field experts and local and international consultants of each JIB School. Learning sessions and materials are also provided by our 
+                                international partners to incorporate international best practices in flexible learning programs.
+                            </p>
+                        </ul>
+                    </li>
+                    <li><h2>Global Learning Environment</h2>
+                        <ul>
+                            <p>
+                                Students become global citizens. We bring the world to our virtual classrooms. Through our international partners and our World Education 
+                                Advisory Council, students get diverse experiences and exchanges. Students get to make friends with other international students around 
+                                the world through web-based learning platforms and as well as virtual field trips. This fosters multiculturalism and internationalism.
+                            </p>
+                        </ul>
+                    </li>
+                    <li><h2>Stockbridge Package for At Home Learning (Stockbridge PAL)</h2>
+                        <ul>
+                            <p>
+                                To support learning at home, each student is given a Stockbridge PAL. This is an independent learning kit that contains a list of 
+                                learning invitations with detailed instructions on how to do the activities. It also has worksheets, project materials, and other 
+                                resources to enrich the learning experience. Learning invitations may be done at the student’s own time and pace.
+                            </p>
+                        </ul>
+                    </li>
+                    <li><h2>Stocky’s Socials</h2>
+                        <ul>
+                            <p>
+                                Socio-emotional skills are nurtured even through a virtual classroom modality. Virtual activities are also organized to provide 
+                                opportunities for students to socialize and hangout with their friends for a holistic student learning experience. 
+                                Online activities such as online book clubs, mindfulness exercises for mental health and emotional development, online art clubs, 
+                                recipe exchanges and etc. Virtual counselling with the school’s licensed guidance counsellor is also available for students.
+                            </p>
+                        </ul>
+                    </li>
+                    <li><h2>Parent Support Program</h2>
+                        <ul>
+                            <p>
+                                Parents are our partners in the success of students’ learning journeys. We will be with you every step of the way as we transition 
+                                to this new modality of learning. Our parent support program includes the parent orientation webinar series, virtual classroom simulation week, 
+                                and personalized meetings. A designated parent coordinator is also assigned to make sure that concerns and feedback of parents 
+                                are properly addressed. Teachers have designated one-on-one sessions and small group meetings with students to allow feedbacking and 
+                                enrichment of learning. Parents can coordinate with the school’s parent coordinator should their children be experiencing any difficulty 
+                                in their lessons, homework and other activities.
+                            </p>
+                        </ul>
+                    </li>
+                    <li><h2>Education Technology Partners</h2>
+                        <ul>
+                            <p>
+                                Our virtual classroom is safe and secure. We have partnered with authorized educational technology services to make sure that student 
+                                online learning is safe and robust. Partners include Google for Education, Microsoft Education, Zoom for K12 Schools, See Saw for Schools and etc.
+                            </p>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    </section>
+
+    <section class="tabs">
+        <div class="container">
+            <div class="tab">
+                <button class="tablinks" onclick="tabMenu(event, 'early-childhood')">Early Childhood Virtual Classroom</button>
+                <button class="tablinks" onclick="tabMenu(event, 'elementary')">Elementary Virtual Classroom</button>
+                <button class="tablinks" onclick="tabMenu(event, 'parent')">Parent Support Programs</button>
+            </div>
+            <div class="tab-content">
+                <div id="early-childhood" class="tabcontent">
+                    <h3>Early Childhood Virtual Classroom</h3>
+                    <p>The Pre-Kindergarten Virtual Classroom offers learners an inquiry-based program that focuses on the development of core skills. 
+                        It is a combination of online and experiential, hands-on learning. Lessons also offer children opportunities to develop their 
+                        L.I.O.N.S socio-emotional competencies.
+                        <br><br>
+                        Our weekly learning journey is intentionally designed to engage students in a meaningful, interactive environment.
+                    </p>
+                    <div class="gallery-grid">
+                        <a href="assets/images/vc-learning-1.jpg" data-lightbox="models" data-title="Caption1">
+                            <img src="assets/images/vc-learning-1.jpg" alt="">
+                        </a>
+                        <a href="assets/images/vc-learning-2.jpg" data-lightbox="models" data-title="Caption2">
+                            <img src="assets/images/vc-learning-2.jpg" alt="">
+                        </a>
+                        <a href="assets/images/our-story-3.jfif" data-lightbox="models" data-title="Caption3">
+                            <img src="assets/images/our-story-3.jfif" alt="">
+                        </a>   
+                      </div>
+                  </div>
+                  <div id="elementary" class="tabcontent">
+                    <h3>Elementary Virtual Classroom</h3>
+                    <p>The Pre-Kindergarten Virtual Classroom offers learners an inquiry-based program that focuses on the development of core skills. 
+                        It is a combination of online and experiential, hands-on learning. Lessons also offer children opportunities to develop their 
+                        L.I.O.N.S socio-emotional competencies.
+                        <br><br>
+                        Our weekly learning journey is intentionally designed to engage students in a meaningful, interactive environment.
+                    </p>
+                    <div class="gallery-grid">
+                        <a href="assets/images/vc-learning-4.jfif" data-lightbox="models" data-title="Caption1">
+                            <img src="assets/images/vc-learning-4.jfif" alt="">
+                        </a>
+                        <a href="assets/images/vc-learning-5.jfif" data-lightbox="models" data-title="Caption2">
+                            <img src="assets/images/vc-learning-5.jfif" alt="">
+                        </a>   
+                      </div>
+                  </div>
+                  <div id="parent" class="tabcontent">
+                    <h3>Parent Support Programs</h3>
+                    <p>The Pre-Kindergarten Virtual Classroom offers learners an inquiry-based program that focuses on the development of core skills. 
+                        It is a combination of online and experiential, hands-on learning. Lessons also offer children opportunities to develop their 
+                        L.I.O.N.S socio-emotional competencies.
+                        <br><br>
+                        Our weekly learning journey is intentionally designed to engage students in a meaningful, interactive environment.
+                    </p>
+                  </div>
+            </div>
+        </div>
+        <script src="assets/js/lightbox-plus-jquery.js"></script>
+        <script>
+            function tabMenu(evt, tabName) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(tabName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+            </script>
+    </section>
+    
+    <!--our story content ends here-->
+
+
+    <!--footer starts here-->
+    <footer>
+      <div class="map top">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.4185943997527!2d125.58090967577152!3d7.077372316477603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f96d7aec7280ef%3A0x81da66bcfd0d5753!2sStockbridge%20American%20International%20School%20Davao!5e0!3m2!1sen!2sph!4v1698081930020!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
+        <div class="content grid top">
+          <div class="box">
+            <div class="logo">
+              <img src="assets/images/logo-header.png" alt="">
+            </div>
+            <p>© Stockbridge American International School 2023. <br>All Rights Reserved. <br>Sixeleven Global Services</p>
+            <div class="social flex">
+              <a href="https://www.facebook.com/StockbridgeOfficial/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/StockBridgeIntl"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/stockbridgeofficial/?hl=en"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/@stockbridgeinternationalsc8483" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          
+          <div class="box">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><i class="fas fa-angle-double-right"></i><a href="our-story.html">Our Story</a></li>
+              <li><i class="fas fa-angle-double-right"></i><a href="school-calendar.html">School Calendar</a></li>
+              <li><i class="fas fa-angle-double-right"></i><a href="global-business-leadership.html">Global Business Leadership</a></li>
+              <li><i class="fas fa-angle-double-right"></i><a href="news-media.html">News and Media</a></li>
+              <li><i class="fas fa-angle-double-right"></i><a href="blog.html">Blog</a></li>
+              <li><i class="fas fa-angle-double-right"></i><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+  
+  
+          <div class="box">
+            <h2>Services</h2>
+            <div class="icon flex">
+              <div class="i">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="text">
+                <h3>Address</h3>
+                <p>Davao City Bugac, Maa Road Davao City</p>
+              </div>
+            </div>
+            <div class="icon flex">
+              <div class="i">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="text">
+                <h3>Tel No.</h3>
+                <p>(082) 225 1847</p>
+              </div>
+            </div>
+            <div class="icon flex">
+              <div class="i">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="text">
+                <h3>Mobile No.</h3>
+                <p>0922 250 1492</p>
+              </div>
+            </div>
+            
+            <div class="icon flex">
+              <div class="i">
+                <i class="far fa-envelope"></i>
+              </div>
+              <div class="text">
+                <h3>Email</h3>
+                <p>info@stockbridge.ph</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+      <!--footer ends here-->
+    
+</body>
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior High School</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/stockbridge_no_bg.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+    <!--navbar starts here-->
+    <header>
+        <a href="index.html" class="logo">
+          <img src="assets/images/stockbridge_no_bg.png" alt="">
+        </a>
+        <div class="navigation">
+            <ul class="menu">
+                <div class="close-btn"></div>
+                <li class="menu-item"><a href="index.html">home</a></li>
+                <li class="menu-item">
+                    <a  class="sub-btn" href="#">about us <i class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                  <li class="sub-item"><a href="our-story.html">our story</a></li>
+                  <li class="sub-item"><a href="mvc-values.html">Our Mission, Vision And Core Values</a></li>
+                  <li class="sub-item"><a href="our-saga.html">Our SAGA</a></li>
+                  <li class="sub-item"><a href="int-partners.html">Our International Partners</a></li>
+                  <li class="sub-item"><a href="stockbridge-adv.html">The Stockbridge Advantage</a></li>
+                  <li class="sub-item"><a href="our-facilities.html">Our Facilities</a></li>
+                  <li class="sub-item"><a href="admission.html">Admission</a></li>
+                </ul>
+                </li>
+                <li class="menu-item">
+                    <a class="sub-btn" href="#">our programs <i class="fas fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li class="sub-item"><a href="early-childhood.html">Early Childhood</a></li>
+                    <li class="sub-item"><a href="elementary.html">Elementary</a></li>
+                    <li class="sub-item"><a href="junior-high.html">Junior High School</a></li>
+                    <li class="sub-item"><a href="vc-learning.html">Virtual Classroom Learning</a></li>
+                    <li class="sub-item"><a href="curriculum.html">Our Curriculum</a></li>
+                    <li class="sub-item"><a href="school-calendar.html">Our School Calendar</a></li>
+                  </ul>
+                  </li>
+                <li class="menu-item">
+                    <a class="sub-btn" href="#">our highlights <i class="fas fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li class="sub-item"><a href="global-business-leadership.html">global business leadership</a></li>
+                    <li class="sub-item"><a href="entrep-inno.html">Entrepreneurship And Innovations</a></li>
+                    <li class="sub-item"><a href="leader-personal-dev.html">Leadership And Personality Development</a></li>
+                    <li class="sub-item"><a href="international-education-week.html">International Education Week</a></li>
+                    <li class="sub-item"><a href="lions-week.html">LIONS Week</a></li>
+                    <li class="sub-item"><a href="clubs-organizations.html">Clubs and Organizations</a></li>
+                    <li class="sub-item"><a href="community-service.html">Community Service</a></li>
+                    <li class="sub-item"><a href="leadership-engagement-trips.html">Leadership And Engagement Trips</a></li>
+                  </ul>
+                  </li> 
+                <li class="menu-item"><a href="news-media.html">news and media</a></li>
+                <li class="menu-item"><a href="blog.html">blog</a></li>
+                <li class="menu-item"><a href="contact.html">contact us</a></li>
+            </ul>
+        </div>
+        <div class="menu-btn">
+            
+        </div>
+    </header>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".sub-btn").click(function(){
+                $(this).next(".sub-menu").slideToggle();
+            });
+        });
+    
+        var menu = document.querySelector(".menu");
+        var menuBtn = document.querySelector(".menu-btn");
+        var closeBtn = document.querySelector(".close-btn");
+    
+        menuBtn.addEventListener("click", () => {
+            menu.classList.add("active");
+        });
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove("active");
+        });
+    
+        //javascript for the navigation bar effects on scroll
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+      </script>
+    <!--navbar ends here-->
+
+    <!--our story content starts here-->
+    <section class="junior-high">
+        <div class="container">
+            <div class="heading">
+                <h3>Why Study Elementary in Stockbridge?</h3>
+            </div>
+            <div class="content">
+                <h2>Kinder to Grades 1-10 Programs</h2>
+                <p>
+                    Stockbridge American International School provides students with the best educational opportunities for them to become Global Business Leaders.
+                    <br><br>
+                    Our students come from countries around the world and bring with them their own cultural experiences that are openly shared with their classmates. 
+                    The international mindset means that students see past nationalities and see one another as fellow students and global collaborators.
+                    <br><br>
+                    At the center of everything that we do are our CORE values. Our CORE values include Leadership, Integrity, Open-mindedness, Nobility, and Stewardship or LIONS. 
+                    These provide the guiding lights for everything we do inside the classroom, within our school walls, in our homes, in our communities, and throughout the world. 
+                    These CORE values emphasize the essential and enduring components required to ensure achievement as a Global Leader and Lifelong Learner. 
+                    Our CORE values will develop into what every graduate of Stockbridge American International School will be known for : the Stockbridge Advantage : 
+                    Graduate Attributes (SAGA).
+                </p>
+
+                <div class="img-logo">
+                    <img src="assets/images/dare-to-lead-elementary-no-bg.png" alt="">
+                </div>
+                
+                <p>
+                    Our SAGA and the expansion of our global awareness leads us to the Stockbridge American International School academic curriculum. 
+                    While we are board certified from the Department of Education here in the Philippines, we integrate various international curricula 
+                    depending on your child’s academic program.
+                    <br><br>
+                    In our elementary school, we integrate the NACEL International School Systems Standards (USA). Therefore, we have a stronger presence of 
+                    the foundations of the English language and the integration of media arts. The benefit of our integration of international curricula means 
+                    that when your child completes an academic milestone, they will receive two certificates; one from the Department of Education and one 
+                    from our US International educational partner.
+                    <br><br>
+                    Stockbridge American International School stands apart in our focus on Entrepreneurship. Two of our core subjects, Entrepreneurship and Innovations (EAI) 
+                    and Leadership and Personality Development (LEAP), guide our students in learning how to be a global leader and a noble entrepreneur. 
+                    Some outcomes from these two classes include researching and analyzing market trends, developing their own business plan, 
+                    preparing for a successful job interview, and learning how to facilitate a Zoom meeting.
+                    <br><br>
+                    Stockbridge celebrates who we are throughout every academic year. However, our internationalization takes center focus during our yearly 
+                    International Week celebrations. These celebrations take who we are and integrate the United Nations Sustainable Development Goals to further 
+                    expand our global awareness and presence.
+                </p>
+
+                <div class="gallery-grid">
+                    <a href="assets/images/elementary-1.jfif" data-lightbox="models" data-title="Caption1">
+                        <img src="assets/images/elementary-1.jfif" alt="">
+                    </a>
+                    <a href="assets/images/elementary-2.jfif" data-lightbox="models" data-title="Caption2">
+                        <img src="assets/images/elementary-2.jfif" alt="">
+                    </a>
+                    <a href="assets/images/elementary-3.jfif" data-lightbox="models" data-title="Caption3">
+                        <img src="assets/images/elementary-3.jfif" alt="">
+                    </a>   
+                  </div>
+                  <script src="assets/js/lightbox-plus-jquery.js"></script>
+
+                  <h2>Stockbridge Highlights:</h2>
+                    <p> &#x2022;
+                        International Curriculum grounded on NACEL (USA)
+                        <br>&#x2022;
+                        Dual Certificate Program: An International Certifice issued by NACEL (USA) and a Philippine Certificate issued by the Department of Education
+                        <br>&#x2022;
+                        Innovative Educational Facilities
+                        <br>&#x2022;
+                        Experiential Learning
+                        <br>&#x2022;
+                        Stockbridge Advantage Subject – Leadership and Personality Development (LEAP) and Entrepreneurship and Innovations (EAI)
+                        <br>&#x2022;
+                        Focus on Leadership, Business and Entrepreneurship
+                    </p>
+            </div>
+
+            <div class="programs-modal">
+                <div class="heading">
+                    <h3>We Offer!</h3>
+                </div>
+                <div class="modal-content">
+                    <div class="box">
+                        <button class="btn" data-target="#modal1">
+                            <h3>Kindergarten (5.0 to 5.11 yo)</h3>
+                        </button>
+                    </div>
+                    <div class="modal" id="modal1">
+                        <div class="header">
+                            <div class="title">Kindergarten (5.0 to 5.11 yo)</div>
+                            <button class="btn close-modal">&times;</button>
+                        </div>
+                        <div class="body">
+                            <p>
+                                The kindergarten program marks a child’s entry into formal education. Stockbridge offers a high-quality kindergarten program with a strong core 
+                                curriculum. Kindergarten students will learn Science, English Language Arts, Leadership and Personality Development, Math, and take part in an 
+                                Individualized Reading Program. Children also develop strong social skills, independence, confidence, and a love for learning. 
+                                As students connect their classroom learning with life skills, their achievements are being assessed and recorded in our LIONS PRIDE, 
+                                our kindergarten badge book. This book will serve as a permanent record of skills learned in kindergarten. By the end of the program, 
+                                students become confident learners, readers and writers, and ready for Grade 1.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-content">
+                    <div class="box">
+                        <button class="btn" data-target="#modal2">
+                            <h3>Grades 1-3</h3>
+                        </button>
+                    </div>
+                    <div class="modal" id="modal2">
+                        <div class="header">
+                            <div class="title">Grades 1-3</div>
+                            <button class="btn close-modal">&times;</button>
+                        </div>
+                        <div class="body">
+                            <p>
+                                As students step into their first years of grade school, they learn how to thrive in a technology-based classroom. 
+                                Building upon the literacy skills introduced in kindergarten, students will practice penmanship and strengthen their reading comprehension. 
+                                Concepts of digital well-being, business, and financial literacy are introduced. 
+                                Filipino language class begins and students learn how to make connections across languages.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-content">
+                    <div class="box">
+                        <button class="btn" data-target="#modal3">
+                            <h3>Grades 4-6</h3>
+                        </button>
+                    </div>
+                    <div class="modal" id="modal3">
+                        <div class="header">
+                            <div class="title">Grades 4-6</div>
+                            <button class="btn close-modal">&times;</button>
+                        </div>
+                        <div class="body">
+                            <p>
+                                As young global business leaders, Stockbridge students first experience our Entrepreneurship and Innovations subject during these years. 
+                                In this class, students are taught how to be entrepreneurs and business leaders. They learn how to research and analyze market trends, 
+                                create their own business plan, and then bring their plan into fruition during our Market Day event. The development of their leadership 
+                                skills will be expanded upon in the Stockbridge original subject class of Leadership and Personality Development.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-content">
+                    <div class="box">
+                        <button class="btn" data-target="#modal4">
+                            <h3>Grades 7-10</h3>
+                        </button>
+                    </div>
+                    <div class="modal" id="modal4">
+                        <div class="header">
+                            <div class="title">Grades 7-10</div>
+                            <button class="btn close-modal">&times;</button>
+                        </div>
+                        <div class="body">
+                            <p>
+                                Stockbridge Junior High School students take the center stage as they lead the development of their own SAGA. 
+                                Students will expand their global awareness in world language classes and global collaboration projects. 
+                                They will develop their own business proposal and hone their skills at creating an elevator pitch. 
+                                Students will study various types of Entrepreneurship to determine the focus of their capstone project in becoming a young global 
+                                business leader and noble entrepreneur.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-content">
+                    <div class="box">
+                        <button class="btn" data-target="#modal5">
+                            <h3>Stockbridge Advantage Subjects:</h3>
+                        </button>
+                    </div>
+                    <div class="modal" id="modal5">
+                        <div class="header">
+                            <div class="title">Stockbridge Advantage Subjects:</div>
+                            <button class="btn close-modal">&times;</button>
+                        </div>
+                        <div class="body">
+                            <p>
+                                <b>Leadership and Personality Development (LEAP)</b> program guides young students to make decisions and act responsibly toward the common good 
+                                through developing the students’ ethical personality and leadership skills. Students will learn important lifelong skills that prepare 
+                                them for today’s challenges and will be the foundation for a lifetime of success. It’s in this course that we explore integrity and 
+                                the concept of becoming a confident <b>Global Business Leader</b>.
+
+                                <b>Entrepreneurship and Innovations (EAI)</b> encompasses the fields of Information, Communication and Technology, Home Economics, and Entrepreneurship. 
+                                This program gears towards the development of technological proficiency and is anchored on knowledge and information, entrepreneurial concepts, 
+                                process and delivery, work values and life skills. Students learn the foundational skills of making a business plan, presenting 
+                                a marketing strategy and starting their own business. This subject provides the base for becoming a <b>Global Entrepreneur</b>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="overlay"></div>
+            </div>
+            
+            <script src="assets/js/modal.js"></script>
+        </div>
+    </section>
+    <!--our story content ends here-->
+
+
+    <!--footer starts here-->
+    <footer>
+        <div class="map top">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.4185943997527!2d125.58090967577152!3d7.077372316477603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f96d7aec7280ef%3A0x81da66bcfd0d5753!2sStockbridge%20American%20International%20School%20Davao!5e0!3m2!1sen!2sph!4v1698081930020!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
+          <div class="content grid top">
+            <div class="box">
+              <div class="logo">
+                <img src="assets/images/logo-header.png" alt="">
+              </div>
+              <p>© Stockbridge American International School 2023. <br>All Rights Reserved. <br>Sixeleven Global Services</p>
+              <div class="social flex">
+                <a href="https://www.facebook.com/StockbridgeOfficial/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/StockBridgeIntl"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/stockbridgeofficial/?hl=en"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@stockbridgeinternationalsc8483" target="_blank"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            
+            <div class="box">
+              <h2>Quick Links</h2>
+              <ul>
+                <li><i class="fas fa-angle-double-right"></i><a href="our-story.html">Our Story</a></li>
+                <li><i class="fas fa-angle-double-right"></i><a href="school-calendar.html">School Calendar</a></li>
+                <li><i class="fas fa-angle-double-right"></i><a href="global-business-leadership.html">Global Business Leadership</a></li>
+                <li><i class="fas fa-angle-double-right"></i><a href="news-media.html">News and Media</a></li>
+                <li><i class="fas fa-angle-double-right"></i><a href="blog.html">Blog</a></li>
+                <li><i class="fas fa-angle-double-right"></i><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+    
+    
+            <div class="box">
+              <h2>Services</h2>
+              <div class="icon flex">
+                <div class="i">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="text">
+                  <h3>Address</h3>
+                  <p>Davao City Bugac, Maa Road Davao City</p>
+                </div>
+              </div>
+              <div class="icon flex">
+                <div class="i">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="text">
+                  <h3>Tel No.</h3>
+                  <p>(082) 225 1847</p>
+                </div>
+              </div>
+              <div class="icon flex">
+                <div class="i">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="text">
+                  <h3>Mobile No.</h3>
+                  <p>0922 250 1492</p>
+                </div>
+              </div>
+              
+              <div class="icon flex">
+                <div class="i">
+                  <i class="far fa-envelope"></i>
+                </div>
+                <div class="text">
+                  <h3>Email</h3>
+                  <p>info@stockbridge.ph</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--footer ends here-->
+    
+</body>
+</html>

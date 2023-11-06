@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stockbridge American International School - Home</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/stockbridge_no_bg.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="assets/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+</head>
+<body>
+
+    <!--navbar starts here-->
+    <header>
+      <a href="index.html" class="logo">
+        <img src="assets/images/stockbridge_no_bg.png" alt="">
+      </a>
+      <div class="navigation">
+          <ul class="menu">
+              <div class="close-btn"></div>
+              <li class="menu-item"><a href="index.html">home</a></li>
+              <li class="menu-item">
+                  <a  class="sub-btn" href="#">about us <i class="fas fa-angle-down"></i></a>
+              <ul class="sub-menu">
+                <li class="sub-item"><a href="our-story.html">our story</a></li>
+                <li class="sub-item"><a href="mvc-values.html">Our Mission, Vision And Core Values</a></li>
+                <li class="sub-item"><a href="our-saga.html">Our SAGA</a></li>
+                <li class="sub-item"><a href="int-partners.html">Our International Partners</a></li>
+                <li class="sub-item"><a href="stockbridge-adv.html">The Stockbridge Advantage</a></li>
+                <li class="sub-item"><a href="our-facilities.html">Our Facilities</a></li>
+                <li class="sub-item"><a href="admission.html">Admission</a></li>
+              </ul>
+              </li>
+              <li class="menu-item">
+                  <a class="sub-btn" href="#">our programs <i class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                  <li class="sub-item"><a href="early-childhood.html">Early Childhood</a></li>
+                  <li class="sub-item"><a href="elementary.html">Elementary</a></li>
+                  <li class="sub-item"><a href="junior-high.html">Junior High School</a></li>
+                  <li class="sub-item"><a href="vc-learning.html">Virtual Classroom Learning</a></li>
+                  <li class="sub-item"><a href="curriculum.html">Our Curriculum</a></li>
+                  <li class="sub-item"><a href="school-calendar.html">Our School Calendar</a></li>
+                </ul>
+                </li>
+              <li class="menu-item">
+                  <a class="sub-btn" href="#">our highlights <i class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                  <li class="sub-item"><a href="global-business-leadership.html">global business leadership</a></li>
+                  <li class="sub-item"><a href="entrep-inno.html">Entrepreneurship And Innovations</a></li>
+                  <li class="sub-item"><a href="leader-personal-dev.html">Leadership And Personality Development</a></li>
+                  <li class="sub-item"><a href="international-education-week.html">International Education Week</a></li>
+                  <li class="sub-item"><a href="lions-week.html">LIONS Week</a></li>
+                  <li class="sub-item"><a href="clubs-organizations.html">Clubs and Organizations</a></li>
+                  <li class="sub-item"><a href="community-service.html">Community Service</a></li>
+                  <li class="sub-item"><a href="leadership-engagement-trips.html">Leadership And Engagement Trips</a></li>
+                </ul>
+                </li> 
+              <li class="menu-item"><a href="news-media.html">news and media</a></li>
+              <li class="menu-item"><a href="blog.html">blog</a></li>
+              <li class="menu-item"><a href="contact.html">contact us</a></li>
+          </ul>
+      </div>
+      <div class="menu-btn">
+          
+      </div>
+  </header>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".sub-btn").click(function(){
+                $(this).next(".sub-menu").slideToggle();
+            });
+        });
+    
+        var menu = document.querySelector(".menu");
+        var menuBtn = document.querySelector(".menu-btn");
+        var closeBtn = document.querySelector(".close-btn");
+    
+        menuBtn.addEventListener("click", () => {
+            menu.classList.add("active");
+        });
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove("active");
+        });
+    
+        //javascript for the navigation bar effects on scroll
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+      </script>
+    <!--navbar ends here-->
+
+    <!--section-home starts here-->
+    <section class="section-home">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="assets/videos/home-video.mp4" type="video/mp4">
+        </video>
+        <div class="home-content">
+            <h1>Stockbridge</h1>
+            <a href="#section-two">Explore</a>
+        </div>
+      </section>
+    <!--section-home ends here-->
+
+    <!--section-two starts here-->
+    <section class="section-two" id="section-two">
+        <div class="imgWrapper">
+            <img src="assets/images/intro-image.jfif" alt="">
+        </div>
+        <div class="contentWrapper">
+            <div class="content">
+                <h3>Welcome to Stockbridge American International School</h3>
+                <h2>Dare to lead. Be a Global Business Leader.</h2>
+                <p>The Stockbridge American International School (SAIS) is the first and only International School in Davao and General Santos Cities, 
+                    Philippines offering early childhood (6 months old to 5 years old) and basic education (Kinder to Grade 12) programs. 
+                    SAIS prides itself as a truly international school that provides internationally-benchmarked curricula and innovative learning experiences 
+                    that develop students to become business leaders with global competencies.</p>
+                <a href="global-business-leadership.html">Read More</a>
+            </div>
+        </div>
+      </section>
+    <!--section-two ends here-->
+
+    <!--section-three starts here-->
+    <section class="section-three">
+        <div class="container">
+          <div class="heading">
+            <h3>A World Class Education Building Global Business Leaders</h3>
+          </div>
+    
+          <div class="content grid">
+            <div class="box">
+              <div class="img">
+                <img src="assets/images/icon-ic.png" alt="">
+              </div>
+              <div class="text">
+                <h3>International Curricula</h3>
+                <p> Our curricula adhere to the standards of our international education partners<br><br></p>
+                <a href="int-partners.html">Read More</a>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img">
+                <img src="assets/images/icon-ief.png" alt="">
+              </div>
+              <div class="text">
+                <h3>Innovative Education Facilities</h3>
+                <p> Learning takes place in modern, age-appropriate and technology aided classrooms and educational facilities</p>
+                <a href="our-facilities.html">Read More</a>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img">
+                <img src="assets/images/icon-le.png" alt="">
+              </div>
+              <div class="text">
+                <h3>Leadership and Entrepreneurship</h3>
+                <p> We inspire and empower our learners to be leaders and entrepreneurs with global competencies</p>
+                <a href="entrep-inno.html">Read More</a>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img">
+                <img src="assets/images/icon-ge.png" alt="">
+              </div>
+              <div class="text">
+                <h3>Global Education</h3>
+                <p> We bring the world into our classrooms. We prepare students to interact on a global scale</p>
+                <a href="stockbridge-adv.html">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!--section-three ends here-->
+
+    <!--section-four(countdown) starts here-->
+    <section class="countdown">
+      <div class="wrapper">
+        <h1 class="heading">Enrollment is ongoing!!!</h1>
+        <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa expedita nemo minus optio quos doloribus! Deleniti, placeat voluptates, sunt enim quidem hic minus dignissimos culpa odio iusto recusandae porro natus!</p>
+
+        <div class="timer">
+            <div class="sub_timer">
+                <h1 id="day" class="digit">00</h1>
+                <p class="digit_name">Days</p>
+            </div>
+            <div class="sub_timer">
+                <h1 id="hour" class="digit">00</h1>
+                <p class="digit_name">Hours</p>
+            </div>
+            <div class="sub_timer">
+                <h1 id="min" class="digit">00</h1>
+                <p class="digit_name">Minutes</p>
+            </div>
+            <div class="sub_timer">
+                <h1 id="sec" class="digit">00</h1>
+                <p class="digit_name">Seconds</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <script>
+      var target_mili_sec = new Date("Jan 1, 2024 24:00:0").getTime();
+      function timer() {
+          var now_mili_sec = new Date().getTime();
+          var remaining_sec = Math.floor( (target_mili_sec - now_mili_sec) / 1000 );
+
+          var day = Math.floor(remaining_sec / (3600 * 24));
+          var hour = Math.floor((remaining_sec % (3600 * 24)) / 3600);
+          var min = Math.floor((remaining_sec % 3600) / 60);
+          var sec = Math.floor(remaining_sec % 60);
+
+          document.querySelector("#day").innerHTML = day;
+          document.querySelector("#hour").innerHTML = hour;
+          document.querySelector("#min").innerHTML = min;
+          document.querySelector("#sec").innerHTML = sec;
+      }
+
+      setInterval(timer, 1000); //1000 it means 1 sec
+      
+</script>
+    <!--section-four(countdown) ends here-->
+
+    <!--section-five ends here-->
+    <section class="section-five">
+      <div class="container">
+        <div class="heading">
+        
+          <h3>Our International Programs</h3>
+        </div>
+  
+        <div class="content grid mtop">
+          <div class="box">
+            <div class="img">
+              <img src="assets/images/early-childhood.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>Early Childhood</h3>
+              <p> 6 months to 4.11 years old</p>
+              <a href="early-childhood.html">Read More</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="assets/images/elementary.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>Elementary</h3>
+              <p> Kinder to Grade 6</p>
+              <a href="elementary.html">Read More</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="assets/images/junior-high.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>Junior High School</h3>
+              <p> Grade 7 to Grade 10</p>
+              <a href="junior-high.html">Read More</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="assets/images/virtual-classroom-learning.jfif" alt="">
+            </div>
+            <div class="text">
+              <h3>Virtual Classroom Learning</h3>
+              <p> </p><br><br>
+              <a href="vc-learning.html">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--section-five ends here-->
+
+    <!--section for steps/enrollment process starts here-->
+    <section class="enrollment-process">
+      <div class="heading">
+        <h3>Enrollment Process</h3>
+      </div>
+      <div class="timeline">
+        <div class="container left-container" id="left-one">
+            <img src="assets/images/number-1.png" alt="">
+            <div class="text-box ">
+                <h2>1st Step</h2>
+                <small>2018 - 2019</small>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur explicabo labore, similique quaerat, ex, ut voluptatum nostrum incidunt ipsam autem sunt sequi. 
+                    Rerum illum, facere ut autem nulla consequuntur exercitationem?</p>
+                    <span class="left-container-arrow"></span>
+            </div>
+        </div>
+  
+        <div class="container right-container" id="right-one">
+            <img src="assets/images/number-2.png" alt="">
+            <div class="text-box">
+                <h2>2nd Step</h2>
+                <small>2018 - 2019</small>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur explicabo labore, similique quaerat, ex, ut voluptatum nostrum incidunt ipsam autem sunt sequi. 
+                    Rerum illum, facere ut autem nulla consequuntur exercitationem?</p>
+                    <span class="right-container-arrow"></span>
+            </div>
+        </div>
+  
+        <div class="container left-container" id="left-two">
+            <img src="assets/images/number-3.png" alt="">
+            <div class="text-box">
+                <h2>3rd Step</h2>
+                <small>2018 - 2019</small>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur explicabo labore, similique quaerat, ex, ut voluptatum nostrum incidunt ipsam autem sunt sequi. 
+                    Rerum illum, facere ut autem nulla consequuntur exercitationem?</p>
+                    <span class="left-container-arrow"></span>
+            </div>
+        </div>
+  
+        <div class="container right-container" id="right-two">
+            <img src="assets/images/number-4.png" alt="">
+            <div class="text-box">
+                <h2>4th Step</h2>
+                <small>2018 - 2019</small>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur explicabo labore, similique quaerat, ex, ut voluptatum nostrum incidunt ipsam autem sunt sequi. 
+                    Rerum illum, facere ut autem nulla consequuntur exercitationem?</p>
+                    <span class="right-container-arrow"></span>
+            </div>
+        </div>
+  
+        <div class="container left-container" id="left-three">
+            <img src="assets/images/number-5.png" alt="">
+            <div class="text-box">
+                <h2>5th Step</h2>
+                <small>2018 - 2019</small>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur explicabo labore, similique quaerat, ex, ut voluptatum nostrum incidunt ipsam autem sunt sequi. 
+                    Rerum illum, facere ut autem nulla consequuntur exercitationem?</p>
+                    <span class="left-container-arrow"></span>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <!--section for steps/enrollment process ends here-->
+
+    <!--section for new home-gallery starts here-->
+    <section class="home-gallery2">
+      <div class="container">
+        <div class="heading">
+          <h3><a href="news-media.html">Our Gallery</a></h3>
+          <p>See what keeps our students happy and engaged – Stockbridge Lions in action!</p>
+        </div>
+        <div class="content">
+          <div class="grid-gallery">
+            <div class="grid-item">
+              <a href="assets/images/gallery-1.png" data-lightbox="gridImage">
+                <img src="assets/images/gallery-1.png" alt="">
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="assets/images/gallery-2.png" data-lightbox="gridImage">
+                <img src="assets/images/gallery-2.png" alt="">
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="assets/images/gallery-3.png" data-lightbox="gridImage">
+                <img src="assets/images/gallery-3.png" alt="">
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="assets/images/gallery-4.png" data-lightbox="gridImage">
+                <img src="assets/images/gallery-4.png" alt="">
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="assets/images/gallery-5.png" data-lightbox="gridImage">
+                <img src="assets/images/gallery-5.png" alt="">
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="assets/images/gallery-6.png" data-lightbox="gridImage">
+                <img src="assets/images/gallery-6.png" alt="">
+              </a>
+            </div>
+          </div>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+          <script src="assets/js/lightbox.min.js"></script>
+        </div>
+      </div>
+    </section>
+
+    <!--section for new home-gallery ends here-->
+    
+    <!--section-six(home-gallery) starts here--
+    <section class="home-gallery">
+      <div class="container">
+       <div class="heading">
+        <h3>Our Gallery</h3>
+        <p>See what keeps our students happy and engaged – Stockbridge Lions in action!</p>
+       </div>
+      <div class="content">
+        <div class="gallery-grid">
+          <a href="images/gallery-1.png" data-lightbox="models" data-title="Caption1">
+              <img src="images/gallery-1.png" alt="">
+          </a>
+          <a href="images/gallery-2.png" data-lightbox="models" data-title="Caption2">
+              <img src="images/gallery-2.png" alt="">
+          </a>
+          <a href="images/gallery-3.png" data-lightbox="models" data-title="Caption3">
+              <img src="images/gallery-3.png" alt="">
+          </a>
+          <a href="images/gallery-4.png" data-lightbox="models" data-title="Caption4">
+              <img src="images/gallery-4.png" alt="">
+          </a>
+          <a href="images/gallery-5.png" data-lightbox="models" data-title="Caption5">
+              <img src="images/gallery-5.png" alt="">
+          </a>
+          <a href="images/gallery-6.png" data-lightbox="models" data-title="Caption6">
+              <img src="images/gallery-6.png" alt="">
+          </a>
+        </div>
+        <script src="js/lightbox-plus-jquery.js"></script>
+        </div>
+      </div>
+    </section>
+    -section-six ends here-->
+
+    <!--section-seven starts here-->
+    <section class="section-seven">
+      <div class="container">
+        <div class="heading">
+        
+          <h3>Recent Blog</h3>
+        </div>
+    
+        <div class="content grid">
+          <div class="box">
+            <div class="img">
+              <img src="assets/images/blog-1.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>Essay Writing</h3>
+              <p> How can we unite amidst diversity? "We can unite amidst diversity by putting aside (our) differences. If we do that, we won't be fighting about our different ways. 
+                When you work together, you could probably do more than you could by yourself.</p>
+              <a href="blog-1.html">Read More</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="assets/images/blog-2.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>National 1st Karate Pilipinas</h3>
+              <p> Stockbridge Pride Vryzyse Edelweiss Krebs who bagged Gold Medal in National 1st Karate Pilipinas E-Kata Championships and Silver medal in the recent 3rd 
+                Annual Hakuakai Philippines Championship E-Kata Tournament Online Karate.</p>
+              <a href="blog-2.html">Read More</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="assets/images/blog-3.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>Digital Poster</h3>
+              <p> The importance of communication is fully grasped in a digital poster created by Julian Carlo Dublan.<br><br><br><br></p>
+              <a href="blog-3.html">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--section-seven ends here-->
+
+
+    <script>
+      ScrollReveal({
+        reset: true,
+        distance: '80px',
+        duration: 2500,
+        delay: 400
+      });
+  
+      ScrollReveal().reveal('', { delay: 300, origin: 'top'});
+      ScrollReveal().reveal('', { delay: 500, origin: 'left'});
+      ScrollReveal().reveal('.section-three .box, .section-five .box, .section-seven .box', { delay: 200, origin: 'bottom', interval: 300});
+      ScrollReveal().reveal('.layer1 img', { delay: 400, origin: 'top'});
+      ScrollReveal().reveal('.layer2 .box', { delay: 800, origin: 'bottom', interval: 1000});
+      ScrollReveal().reveal('.partners .owl-carousel', { delay: 500, origin: 'bottom'});
+      ScrollReveal().reveal('.videos .video', { delay: 3000, origin: 'left'});
+    </script>
+
+
+    <!--footer starts here-->
+    <footer>
+      <div class="map top">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.4185943997527!2d125.58090967577152!3d7.077372316477603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f96d7aec7280ef%3A0x81da66bcfd0d5753!2sStockbridge%20American%20International%20School%20Davao!5e0!3m2!1sen!2sph!4v1698081930020!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
+        <div class="content grid top">
+          <div class="box">
+            <div class="logo">
+              <img src="assets/images/logo-header.png" alt="">
+            </div>
+            <p>© Stockbridge American International School 2023. <br>All Rights Reserved. <br>Sixeleven Global Services</p>
+            <div class="social flex">
+              <a href="https://www.facebook.com/StockbridgeOfficial/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/StockBridgeIntl"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/stockbridgeofficial/?hl=en"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/@stockbridgeinternationalsc8483" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          
+          <div class="box">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><i class="fas fa-angle-double-right"></i><a href="our-story.html">Our Story</a></li>
+              <li><i class="fas fa-angle-double-right"></i><a href="school-calendar.html">School Calendar</a></li>
+              <li><i class="fas fa-angle-double-right"></i><a href="global-business-leadership.html">Global Business Leadership</a></li>
+              <li><i class="fas fa-angle-double-right"></i><a href="news-media.html">News and Media</a></li>
+              <li><i class="fas fa-angle-double-right"></i><a href="blog.html">Blog</a></li>
+              <li><i class="fas fa-angle-double-right"></i><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+  
+  
+          <div class="box">
+            <h2>Services</h2>
+            <div class="icon flex">
+              <div class="i">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="text">
+                <h3>Address</h3>
+                <p>Davao City Bugac, Maa Road Davao City</p>
+              </div>
+            </div>
+            <div class="icon flex">
+              <div class="i">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="text">
+                <h3>Tel No.</h3>
+                <p>(082) 225 1847</p>
+              </div>
+            </div>
+            <div class="icon flex">
+              <div class="i">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="text">
+                <h3>Mobile No.</h3>
+                <p>0922 250 1492</p>
+              </div>
+            </div>
+            
+            <div class="icon flex">
+              <div class="i">
+                <i class="far fa-envelope"></i>
+              </div>
+              <div class="text">
+                <h3>Email</h3>
+                <p>info@stockbridge.ph</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--footer ends here-->
+
+</body>
+</html>
