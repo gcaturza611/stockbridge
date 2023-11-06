@@ -311,7 +311,7 @@ header.sticky .menu-item .sub-menu{
     background-size: cover;
     text-align: center;
     padding: 15%;
-    background-image: url("../images/countdown-bg.jpg");
+    background-image: url("/assets/images/home-header.jpg");
   }
   .countdown .heading{
     color: #fff;
