@@ -96,67 +96,75 @@
 
     <!--contactus content starts here-->
     <section class="contact">
-        <div class="container">
-            <div class="left">
-                <div class="form-wrapper">
-                    <div class="contact-heading">
-                        <h1>Let's work together<span>.</span></h1>
-                        <p class="text">Or reach us via: <a href="mailto:info@stockbridge.com">info@stockbridge.com</a></p></p>
-                    </div>
-                    <form action="index.html" method="post" class="contact-form">
-                        <div class="input-wrap">
-                            <input class="contact-input" autocomplete="off" name="First name" type="text" required>
-                            <label>First Name</label>
-                            <i class="icon fa-solid fa-address-card"></i>
-                        </div>
-
-                        <div class="input-wrap">
-                            <input class="contact-input" autocomplete="off" name="Last name" type="text" required>
-                            <label>Last Name</label>
-                            <i class="icon fa-solid fa-address-card"></i>
-                        </div>
-
-                        <div class="input-wrap w-100">
-                            <input class="contact-input" autocomplete="off" name="Email" type="text" required>
-                            <label>Email</label>
-                            <i class="icon fa-solid fa-envelope"></i>
-                        </div>
-
-                        <div class="input-wrap textarea w-100">
-                            <textarea name="Message" autocomplete="off" class="contact-input" required></textarea>
-                            <label>Message</label>
-                            <i class="icon fa-solid fa-inbox"></i>
-                        </div>
-
-                        <div class="contact-buttons">
-                            <button class="btn upload">
-                                <span>
-                                    <i class="fa-solid fa-paperclip"></i>Add attachment
-                                </span>
-                                <input type="file" name="attachment">
-                            </button>
-                            <input type="submit" value="Send message" class="btn">
-                        </div>
-                    </form>
-                </div>
+      <div class="content">
+          <h2>Contact Us</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla fugit velit voluptatem dolorem asperiores necessitatibus voluptatibus, 
+              qui nesciunt architecto laboriosam, impedit libero? Ullam tempore accusamus possimus dignissimos deleniti, labore soluta.</p>
+      </div>
+      <div class="container">
+          <div class="contactInfo">
+              <div class="box">
+                  <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                  <div class="text">
+                      <h3>Address</h3>
+                      <p>JRL Building, Maa Plaza, <br>Km. 5 Don Julian Rodriguez Sr. Ave, Bugac, <br>Davao City, 8000 Davao del Sur</p>
+                  </div>
+              </div>
+              <div class="box">
+                  <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                  <div class="text">
+                      <h3>Phone</h3>
+                      <p>(082) 225 1847 <br>0922 250 1492</p>
+                  </div>
+              </div>
+              <div class="box">
+                  <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                  <div class="text">
+                      <h3>Email</h3>
+                      <p>info@stockbridge.com</p>
+                  </div>
+              </div>
             </div>
-           <!--<div class="right">
-                <div class="image-wrapper">
-                    <img src="images/home-header.jpg" class="img">
-                </div>
-                <div class="wave-wrap">
-                    <svg class="wave" viewBox="0 0 783 1536" fill="none"
-                    xmlns="hhtp://www.w3.org/2000/svg">
-                <path id="wave"
-                    d="M236.705 1356.18C200.542 1483.72 64.5004 1528.54 1
-                    1535V1H770.538C793.858 63.1213 797.23 196.197 624.165 231.531C407.883 275.698 274 331.715 450.884 568.709C627.393
-                    805.704 510.079 815.399 347.561 939.282C185.043 1063.17 281.908 1196.74 236.705 1356.18Z" />
-                </svg>
-                </div>-->
-            </div>
-        </div>
-    </section>
-    <script src="assets/js/contact.js"></script>
+              <div class="contactForm">
+                  <form onsubmit="sendEmail(); reset(); return false;">
+                      <h2>Send Message</h2>
+                      <div class="inputBox">
+                          <input type="text" id="name" required>
+                          <span>Full Name</span>
+                      </div>
+                      <div class="inputBox">
+                          <input type="email" id="email" required>
+                          <span>Email</span>
+                      </div>
+                      <div class="inputBox">
+                          <textarea id="message" required="required"></textarea>
+                          <span>Type your Message</span>
+                      </div>
+                      <div class="inputBox">
+                          <input type="submit" name="" value="Send">
+                      </div>
+                  </form>
+              </div>
+              <script src="https://smtpjs.com/v3/smtp.js"></script>
+              <script>
+                function sendEmail(){
+                  Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : "georgecaturza611@gmail.com",
+                    Password : "password",
+                    To : 'georgecaturza611@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : "New Contact Form",
+                    Body : "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Message: " + document.getElementById("message").value
+                }).then(
+                  message => alert("Message Send Successfully")
+                );
+                }
+              </script>
+      </div>
+  </section>
     <!--contactus content ends here-->
 
     <!--footer starts here-->
