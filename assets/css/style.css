@@ -809,7 +809,7 @@ footer{
   justify-content: center;
 }
 .stockbridge-adv .gallery-grid img{
-  max-width:600px ;
+  max-width:100% ;
   border-radius: 20px;
   height: 40vh;
   display: block;
@@ -905,6 +905,7 @@ footer{
   font-size: 20px;
   margin: 15px 0;
   text-align: center;
+  color: #23252b;
 }
 .early-childhood .programs-modal .btn{
   width: 100%;
@@ -915,9 +916,6 @@ footer{
   background-color: #fff;
   text-align: left;
  
-}
-.early-childhood .programs-modal .btn h3{
-  color: #23252b;
 }
 .early-childhood .programs-modal .btn:active{
   transform: scale(0.9);
@@ -946,7 +944,7 @@ footer{
   overflow: scroll;
 }
 .early-childhood .programs-modal .modal.active{
-  top: 10%;
+  top: 20%;
   visibility: visible;
 }
 .early-childhood .programs-modal .modal .header{
@@ -954,8 +952,9 @@ footer{
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ccc;
-  padding: 0.5rem;
   background-color: rgba(0, 0, 0, 0.05);
+  flex-direction: column;
+  padding-top: 30px;
 }
 .early-childhood .programs-modal .modal .body{
   padding: 0.75rem;
@@ -1007,6 +1006,7 @@ footer{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 50%;
 }
 .elementary .programs-modal{
   padding-top: 5%;
@@ -1066,7 +1066,7 @@ footer{
   overflow: scroll;
 }
 .elementary .programs-modal .modal.active{
-  top: 10%;
+  top: 20%;
   visibility: visible;
 }
 .elementary .programs-modal .modal .header{
@@ -1076,6 +1076,8 @@ footer{
   border-bottom: 1px solid #ccc;
   padding: 0.5rem;
   background-color: rgba(0, 0, 0, 0.05);
+  flex-direction: column;
+  padding-top: 30px;
 }
 .elementary .programs-modal .modal .body{
   padding: 0.75rem;
@@ -1127,6 +1129,7 @@ footer{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 50%;
 }
 .junior-high .programs-modal{
   padding-top: 5%;
@@ -1186,7 +1189,7 @@ footer{
   overflow: scroll;
 }
 .junior-high .programs-modal .modal.active{
-  top: 10%;
+  top: 20%;
   visibility: visible;
 }
 .junior-high .programs-modal .modal .header{
@@ -1196,6 +1199,8 @@ footer{
   border-bottom: 1px solid #ccc;
   padding: 0.5rem;
   background-color: rgba(0, 0, 0, 0.05);
+  flex-direction: column;
+  padding-top: 30px;
 }
 .junior-high .programs-modal .modal .body{
   padding: 0.75rem;
@@ -1377,7 +1382,7 @@ footer{
   overflow: scroll;
 }
 .curriculum-modal .modal.active{
-  top: 10%;
+  top: 20%;
   visibility: visible;
 }
 .curriculum-modal .modal .header{
@@ -1387,6 +1392,8 @@ footer{
   border-bottom: 1px solid #ccc;
   padding: 0.5rem;
   background-color: rgba(0, 0, 0, 0.05);
+  flex-direction: column;
+  padding-top: 30px;
 }
 .curriculum-modal .modal .body{
   padding: 0.75rem;
@@ -1897,218 +1904,124 @@ footer{
 
 /*contact css starts here*/
 .contact{
-  width: 100%;
-  overflow: hidden;
-  background-color: #eee;
+  position: relative;
+  min-height: 100vh;
+  padding: 10% 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(../images/contact-bg.jpg);
+  background-size: cover;
+}
+.contact .content{
+  max-width: 800px;
+  text-align: center;
+}
+.contact .content h2{
+  font-size: 36px;
+  font-weight: 500;
+  color: #fff;
+}
+.contact .content p{
+  font-weight: 300;
+  color: #fff;
 }
 .contact .container{
-  height: 100vh;
-  min-height: 700px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-}
-.contact .container > div{
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-.contact .left{
   width: 100%;
-  max-width: 80rem;
-  margin: 0 auto;
-  
-  padding: 65px 1.5rem 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 30px;
+}
+.contact .container .contactInfo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.contact .container .contactInfo .box{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.contact .container .contactInfo .box .icon{
+  min-width: 60px;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  position: relative;
-  z-index: 3;
+  border-radius: 50%;
+  font-size: 22px;
 }
-.contact-heading h1{
-  font-weight: 600;
-  color: #23252b;
-  font-size: 3.5rem;
-  line-height: 0.9;
-  white-space: nowrap;
-  margin-bottom: 1.2rem;
-}
-.contact-heading h1 span{
-  color: #112985;
-}
-.contact .text{
-  color: #23252b;
-  line-height: 1.1;
-  font-size: 1rem;
-}
-.contact .text a{
-  color: #112985;
-  transition: 0.3s;
-}
-.contact .text a:hover{
-  color: #a4a4a4;
-  transition: 0.3s;
-}
-.contact .form-wrapper{
-  max-width: 32rem;
-}
-.contact-form{
-  display: grid;
-  margin-top: 2.55rem;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 2rem;
-  row-gap: 1rem;
-}
-.contact .input-wrap{
-  position: relative;
-}
-.contact .input-wrap.w-100{
-  grid-column: span 2;
-}
-.contact-input{
-  width: 100%;
-  padding: 1.5rem 1.35rem calc(0.75rem - 2px) 1.35rem;
-  background-color: #ccc;
-  border: none;
-  outline: none;
-  font-family: inherit;
-  border-radius: 20px;
-  color: #23252b;
-  font-weight: 600;
-  font-size: 0.95rem;
-  border: 2px solid transparent;
-  box-shadow: 0 0 0 0px #23252b;
-  transition: 0.3s;
-}
-.contact-input:hover{
-  background: #acacac;
-}
-.contact .input-wrap label{
-  position: absolute;
-  top: 50%;
-  left: calc(1.35rem + 2px);
-  transform: translateY(-50%);
-  color: #eee;
-  pointer-events: none;
-  transition: .25s;
-}
-.contact .input-wrap .icon{
-  position: absolute;
-  right: calc(1.35rem + 2px);
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
-  color: #23252b;
-  font-size: 1.25rem;
-  transition: .3s;
-}
-textarea.contact-input{
-  resize: none;
-  width: 100%;
-  min-height: 150px;
-}
-textarea.contact-input ~ label{
-  top: 1.2rem;
-  transform: none;
-}
-textarea.contact-input ~ .icon{
-  top: 1.2rem;
-  transform: none;
-}
-.input-wrap.focus .contact-input{
-  background-color: #eee;
-  border: 2px solid #0095e8;
-}
-.input-wrap.focus label{
-  color: #0095e8;
-}
-.input-wrap.focus .icon{
-  color: #0095e8;
-}
-.input-wrap.not-empty label{
-  font-size: .66rem;
-  top: 0.75rem;
-  transform: translateY(0);
-}
-.contact-buttons{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 1rem;
-  margin-top: 1rem;
-  width: 100%;
-  grid-column: span 2;
-}
-.contact .btn{
-  display: inline-block;
-  padding: 1.1rem 2rem;
-  background-color: #0095e8;
+.contact .container .contactInfo .box .text{
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
   color: #fff;
-  border-radius: 40px;
-  border: none;
-  font-family: inherit;
+  flex-direction: column;
+  font-weight: 300;
+}
+.contact .container .contactInfo .box .text h3{
   font-weight: 500;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: 0.3s;
+  color: #00bcd4;
 }
-.contact .btn:hover{
-  background-color: #112985;
+.contactForm{
+  width: 40%;
+  padding: 40px;
+  background: #fff;
 }
-.contact .btn.upload{
+.contactForm h2{
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+.contactForm .inputBox{
   position: relative;
-  background-color: #ccc;
-}
-.contact .btn.upload span{
-  color: #fff;
-}
-.contact .btn.upload:hover{
-  background-color: #a4a4a4;
-}
-.contact .btn.upload input{
-  position: absolute;
   width: 100%;
-  height: 100%;
-  top: 0;
+  margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+.contactForm .inputBox span{
+  position: absolute;
   left: 0;
-  background-color: red;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]{
+  width: 100px;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
   cursor: pointer;
-  opacity: 0;
+  padding: 10px;
+  font-size: 18px;
 }
-/*.right{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    overflow: hidden;
-    pointer-events: none;
-}
-/*.image-wrapper{
-    position: relative;
-    grid-column: 2;
-}
-/*.image-wrapper .img{
-    position: absolute;
-    height: 130%;
-    left: 60%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-/*.wave-wrap{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 100%;
-    background-color: #ccc;
-}
-.wave-wrap svg{
-    position: absolute;
-    
-}
-#wave{
-    fill: #ccc;
-    height: 100%;
-}*/
 /*contact css ends here*/
 
-/*responsiveness css starts here*/
+/*------------------------------------------------------RESPONSIVENESS SECTION------------------------------------------------*/
 
 /*navigation menu bar responsiveness*/
 @media(max-width: 1360px){
@@ -2208,313 +2121,481 @@ textarea.contact-input ~ .icon{
 
 /*content responsiveness*/
 
-@media(max-width: 1200px){
-  .our-story{
-   padding: 5%;
+/*INDEX RESPONSIVENESS SECTION*/
+@media(min-aspect-ratio: 16/9){
+  .section-home .back-video{
+      width: 100%;
+      height: auto;
   }
-  .our-story .home-gallery .gallery-grid{
+}
+@media(max-aspect-ratio: 16/9){
+  .section-home .back-video{
+      width: auto;
+      height: 100%;
+  }
+}
+@media (max-width:1060px){
+  .section-home .home-content h1{
+      padding-top: 40%;
+      font-size: 100px;
+      color: #fff;
+      font-weight: 600;
+      transition: 0.5s;
+    }
+}
+@media (max-width: 918px){
+  .section-home .home-content h1{
+      padding-top: 60%;
+      font-size: 80px;
+      color: #fff;
+      font-weight: 600;
+      transition: 0.5s;
+  }
+}
+@media (max-width: 516px){
+  .section-home .home-content h1{
+      padding-top: 80%;
+      font-size: 40px;
+      color: #fff;
+      font-weight: 600;
+      transition: 0.5s;
+  }
+}
+@media(max-width: 991px){
+.section-two{
+    margin-left: 5%;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+}
+.section-two .contentWrapper{
+    padding-left: 0;
+}
+
+}
+@media(max-width: 768px){
+.section-two{
+    width:90%;
+}
+.section-two .contentWrapper h2{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.section-two .contentWrapper p{
+    line-height: 24px;
+}
+}
+@media(max-width: 575px){
+.section-two .contentWrapper h2{
+    font-size: 25px;
+}
+.section-two .contentWrapper p{
+    font-size: 15px;
+    line-height:  22px;
+}
+.section-two .contentWrapper a{
+    font-size: 15px;
+    padding: 10px 20px;
+}
+}
+@media(max-width: 1280px){
+.section-three .content{
+  margin-top: 40px;
+}
+.section-three .box{
+  margin-bottom: 40px;
+}
+.section-three .content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+@media(max-width: 516px){
+.section-three .content{
+  margin-top: 40px;
+}
+.section-three .box{
+  margin-bottom: 40px;
+}
+.section-three .content{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+}
+@media(max-width: 400px){
+.countdown .digit{
+    font-size: 20px;
+}
+.countdown .digit_name{
+    font-size: 12px;
+}
+}
+@media(max-width: 1280px){
+.section-five .content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+@media(max-width: 570px){
+.section-five .content{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+}
+@media screen and (max-width: 600px) {
+.timeline{
+    margin: 50px auto;
+}
+.timeline::after{
+    left: 80px;
+}
+.timeline .container{
+    width: 100%;
+    padding-left: 99px;
+    padding-right: 0px;
+}
+.timeline .left-container{
+  left: 0;
+}
+.timeline .text-box{
+    font-size: 13px;
+}
+.timeline .text-box small{
+    margin-bottom: 10px;
+}
+.timeline .right-container{
+    left: 0;
+}
+.timeline .left-container img,
+.timeline .right-container img{
+    left: 30px;
+}
+.timeline .left-container-arrow,
+.timeline .right-container-arrow{
+    border-right: 15px solid #23252b;
+    border-left: 0;
+    left: -15px;
+}
+}
+@media(max-width:768px){
+.home-gallery2 .grid-gallery{
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 250px;
+}
+.home-gallery2 .grid-gallery .grid-item:nth-child(3n - 2){
+  grid-column: unset;
+  grid-row: unset;
+}
+}
+@media(max-width: 1280px){
+.section-seven .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+@media(max-width: 620px){
+.section-seven .grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+}
+/*INDEX RESPONSIVENESS SECTION ENDS HERE*/
+
+
+@media(max-width: 1360px){
+  .our-story,
+  .mvc-values,
+  .our-saga,
+  .int-partners,
+  .stockbridge-adv,
+  .our-facilities,
+  .admission,
+  .early-childhood,
+  .elementary,
+  .junior-high,
+  .vc-learning,
+  .our-curriculum,
+  .gbl,
+  .entrep-inno,
+  .leader-personal-dev,
+  .international-education-week,
+  .lions-week,
+  .clubs-organizations,
+  .community-service,
+  .leadership-engagement-trips,
+  .blog-content{
+    padding-top: 5%;
+  }
+}
+@media(max-width: 1200px){
+  .our-story,
+  .mvc-values,
+  .our-saga,
+  .int-partners,
+  .stockbridge-adv,
+  .our-facilities,
+  .admission,
+  .early-childhood,
+  .elementary,
+  .junior-high,
+  .vc-learning,
+  .our-curriculum,
+  .gbl,
+  .entrep-inno,
+  .leader-personal-dev,
+  .international-education-week,
+  .lions-week,
+  .clubs-organizations,
+  .community-service,
+  .leadership-engagement-trips,
+  .blog-content{
+   padding-top: 5%;
+  }
+  .our-story .gallery-grid,
+  .our-facilities .gallery-grid,
+  .early-childhood .gallery-grid,
+  .elementary .gallery-grid,
+  .junior-high .gallery-grid,
+  .tabs .gallery-grid,
+  .entrep-inno .gallery-grid,
+  .leader-personal-dev .gallery-grid,
+  .international-education-week .gallery-grid,
+  .lions-week .gallery-grid,
+  .clubs-organizations .gallery-grid,
+  .community-service .gallery-grid,
+  .leadership-engagement-trips .gallery-grid,
+  .news-media .news-media-modal,
+  .blog .grid,
+  .blog-content .gallery-grid{
        display: grid;
        grid-template-columns: repeat(2, 1fr);
    }
  }
+
  @media(max-width:992px){
-   .our-story .container{
-     padding-top: 15%;
+   .our-story,
+   .mvc-values,
+   .our-saga,
+   .int-partners,
+   .stockbridge-adv,
+   .our-facilities,
+   .admission,
+   .early-childhood,
+   .elementary,
+   .junior-high,
+   .vc-learning,
+   .our-curriculum,
+   .gbl,
+   .entrep-inno,
+   .leader-personal-dev,
+   .international-education-week,
+   .lions-week,
+   .clubs-organizations,
+   .community-service,
+   .leadership-engagement-trips,
+   .blog-content{
+     padding-top: 10%;
    }
  }
+
  @media(max-width: 768px){
-   .our-story .container{
+   .our-story,
+   .mvc-values,
+   .our-saga,
+   .int-partners,
+   .stockbridge-adv,
+   .our-facilities,
+   .admission,
+   .early-childhood,
+   .elementary,
+   .junior-high,
+   .vc-learning,
+   .our-curriculum,
+   .gbl,
+   .entrep-inno,
+   .leader-personal-dev,
+   .international-education-week,
+   .lions-week,
+   .clubs-organizations,
+   .community-service,
+   .leadership-engagement-trips,
+   .blog-content{
      padding-top: 15%;
    }
+   .our-story .gallery-grid,
+   .our-facilities .gallery-grid,
+   .early-childhood .gallery-grid,
+   .elementary .gallery-grid,
+   .junior-high .gallery-grid,
+   .tabs .gallery-grid,
+   .entrep-inno .gallery-grid,
+   .leader-personal-dev .gallery-grid,
+   .international-education-week .gallery-grid,
+   .lions-week .gallery-grid,
+   .clubs-organizations .gallery-grid,
+   .community-service ,.gallery-grid,
+   .leadership-engagement-trips .gallery-grid,
+   .news-media .news-media-modal,
+   .blog .grid,
+   .blog-content .gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
  }
+
  @media(max-width: 600px){
-   .our-story .container{
-     padding-top: 35%;
+   .our-story,
+   .mvc-values,
+   .our-saga,
+   .int-partners,
+   .stockbridge-adv,
+   .our-facilities,
+   .admission,
+   .early-childhood,
+   .elementary,
+   .junior-high,
+   .vc-learning,
+   .our-curriculum,
+   .gbl,
+   .entrep-inno,
+   .leader-personal-dev,
+   .international-education-week,
+   .lions-week,
+   .clubs-organizations,
+   .community-service,
+   .leadership-engagement-trips,
+   .blog-content{
+     padding-top: 20%;
    }
+   
  }
+
  @media(max-width: 400px){
-   .our-story .container{
-     padding-top: 15%;
+   .our-story,
+   .mvc-values,
+   .our-saga,
+   .int-partners,
+   .stockbridge-adv,
+   .our-facilities,
+   .admission,
+   .early-childhood,
+   .elementary,
+   .junior-high,
+   .vc-learning,
+   .our-curriculum,
+   .gbl,
+   .entrep-inno,
+   .leader-personal-dev,
+   .international-education-week,
+   .lions-week,
+   .clubs-organizations,
+   .community-service,
+   .leadership-engagement-trips,
+   .blog-content{
+     padding-top: 30%;
    }
  }
 
+ /*modal responsiveness*/
+ @media(max-width: 980px){
+  .early-childhood .programs-modal .box h3,
+  .elementary .programs-modal .box h3,
+  .junior-high .programs-modal .box h3,
+  .curriculum-modal .box h3{
+    font-size: 15px;
+    padding: 5px 20px;
+  }
+}
+@media(max-width:1080px){
+  .early-childhood .programs-modal .modal.active,
+  .elementary .programs-modal .modal.active,
+  .junior-high .programs-modal .modal.active,
+  .curriculum-modal .modal.active{
+    top: 40%;
+  }
+}
 
-  @media(max-width: 1280px){
-    .our-facilities .gallery-grid{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
+@media(max-width: 1360px){
+  .news-media,
+  .blog{
+    padding-top: 10%;
   }
-  @media(max-width: 1280px){
-    .early-childhood .gallery-grid{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  @media(min-aspect-ratio: 16/9){
-    .section-home .back-video{
-        width: 100%;
-        height: auto;
-    }
-  }
-  @media(max-aspect-ratio: 16/9){
-    .section-home .back-video{
-        width: auto;
-        height: 100%;
-    }
-  }
-  @media (max-width:1060px){
-    .section-home .home-content h1{
-        padding-top: 40%;
-        font-size: 100px;
-        color: #fff;
-        font-weight: 600;
-        transition: 0.5s;
-      }
 }
-@media (max-width: 918px){
-    .section-home .home-content h1{
-        padding-top: 60%;
-        font-size: 80px;
-        color: #fff;
-        font-weight: 600;
-        transition: 0.5s;
-    }
-}
-@media (max-width: 516px){
-    .section-home .home-content h1{
-        padding-top: 80%;
-        font-size: 40px;
-        color: #fff;
-        font-weight: 600;
-        transition: 0.5s;
-    }
-}
-@media(max-width: 991px){
-  .section-two{
-      margin-left: 5%;
-      grid-template-columns: 1fr;
-      grid-gap: 50px;
+@media(max-width: 1200px){
+  .news-media,
+  .blog{
+    padding-top: 15%;
   }
-  .section-two .contentWrapper{
-      padding-left: 0;
+}
+@media(max-width: 992px){
+  .news-media,
+  .blog{
+    padding-top: 20%;
   }
-
 }
 @media(max-width: 768px){
-  .section-two{
-      width:90%;
-  }
-  .section-two .contentWrapper h2{
-      font-size: 30px;
-      padding-bottom: 20px;
-  }
-  .section-two .contentWrapper p{
-      line-height: 24px;
+  .news-media,
+  .blog{
+    padding-top: 25%;
   }
 }
-@media(max-width: 575px){
-  .section-two .contentWrapper h2{
-      font-size: 25px;
-  }
-  .section-two .contentWrapper p{
-      font-size: 15px;
-      line-height:  22px;
-  }
-  .section-two .contentWrapper a{
-      font-size: 15px;
-      padding: 10px 20px;
-  }
-}
-@media(max-width: 1280px){
-  .section-three .content{
-    margin-top: 40px;
-  }
-  .section-three .box{
-    margin-bottom: 40px;
-  }
-  .section-three .content{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media(max-width: 516px){
-  .section-three .content{
-    margin-top: 40px;
-  }
-  .section-three .box{
-    margin-bottom: 40px;
-  }
-  .section-three .content{
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
+@media(max-width: 600px){
+  .news-media,
+  .blog{
+    padding-top: 30%;
   }
 }
 @media(max-width: 400px){
-  .countdown .digit{
-      font-size: 20px;
-  }
-  .countdown .digit_name{
-      font-size: 12px;
-  }
-}
-@media(max-width: 1280px){
-  .section-five .content{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media(max-width: 570px){
-  .section-five .content{
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-  }
-}
-@media screen and (max-width: 600px) {
-  .timeline{
-      margin: 50px auto;
-  }
-  .timeline::after{
-      left: 80px;
-  }
-  .timeline .container{
-      width: 100%;
-      padding-left: 99px;
-      padding-right: 0px;
-  }
-  .timeline .left-container{
-    left: 0;
-  }
-  .timeline .text-box{
-      font-size: 13px;
-  }
-  .timeline .text-box small{
-      margin-bottom: 10px;
-  }
-  .timeline .right-container{
-      left: 0;
-  }
-  .timeline .left-container img,
-  .timeline .right-container img{
-      left: 30px;
-  }
-  .timeline .left-container-arrow,
-  .timeline .right-container-arrow{
-      border-right: 15px solid #23252b;
-      border-left: 0;
-      left: -15px;
-  }
-}
-@media(max-width:768px){
-  .home-gallery2 .grid-gallery{
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-auto-rows: 250px;
-  }
-  .home-gallery2 .grid-gallery .grid-item:nth-child(3n - 2){
-    grid-column: unset;
-    grid-row: unset;
-  }
-}
-@media(max-width: 1280px){
-  .section-seven .grid{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media(max-width: 620px){
-  .section-seven .grid{
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-  }
-}
-@media(max-width: 1280px){
-  .elementary .gallery-grid{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media(max-width: 1280px){
-  .junior-high .gallery-grid{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media(max-width: 1280px){
-  .tabs .gallery-grid{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media(max-width: 1280px){
-  .our-curriculum .gallery-grid{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media(max-width: 1280px){
-  .entrep-inno .gallery-grid{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media(max-width: 1280px){
-  .leader-personal-dev .gallery-grid{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media(max-width: 1280px){
-  .international-education-week .gallery-grid{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media(max-width: 1280px){
-  .lions-week .gallery-grid{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media(max-width: 1280px){
-  .clubs-organizations .gallery-grid{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media(max-width: 1280px){
-  .community-service .gallery-grid{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media(max-width: 1280px){
-  .leadership-engagement-trips .gallery-grid{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media(max-width: 1280px){
-  .news-media .news-media-modal{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media(max-width: 1280px){
-  .blog .grid{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media(max-width: 620px){
-  .blog .grid{
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-  }
-}
-@media(max-width: 1280px){
-  .blog-content .gallery-grid{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+  .news-media,
+  .blog{
+    padding-top: 35%;
   }
 }
 /*responsiveness css ends here*/
+
+/*contact form responsiveness*/
+@media(max-width: 1190px){
+  .contact{
+    padding-top: 15%;
+  }
+}
+@media(max-width: 991px){
+  .contact{
+    padding: 15% 50px;
+  }
+  .contact .container{
+    flex-direction: column;
+  }
+  .contact .container .contactInfo{
+    margin-bottom: 40px;
+  }
+  .contact .container .contactInfo,
+  .contactForm{
+    width: 100%;
+  }
+}
+@media(max-width: 780px){
+  .contact{
+    padding-top: 20%;
+  }
+}
+@media(max-width: 620px){
+  .contact{
+    padding-top: 25%;
+  }
+}
+@media(max-width: 516px){
+  .contact{
+    padding-top: 30%;
+  }
+}
+@media(max-width: 420px){
+  .contact{
+    padding-top: 35%;
+  }
+}
+@media(max-width: 360px){
+  .contact{
+    padding-top: 45%;
+  }
+}
+/*contact form responsiveness ends here*/
